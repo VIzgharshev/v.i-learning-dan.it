@@ -32,7 +32,6 @@
 .main {
    margin: auto;
    text-align: center;
-   width: max-content;
 }
 .img {
    margin-bottom: 49px;
@@ -49,8 +48,9 @@
    color: #373737;
 }
 .main-text{
-   width: 1145px;
+   display: block;
    margin: auto;
+   max-width: 1145px;
    margin-top: 0px;
    margin-bottom: 28px;
    font-weight: 400;
@@ -61,9 +61,7 @@
 }
 .button{
    margin-top: 38px;
-   padding: 0px;
-   width: 191px;
-   height: 51px;
+   padding: 18px 42.5px;
    background: #FF0000;
    border: 0px;
    border-radius: 4px;
