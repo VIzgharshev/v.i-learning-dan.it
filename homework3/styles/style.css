@@ -1,0 +1,126 @@
+body{
+   max-width: 1280px;
+   margin: 68px auto 30px;
+}
+
+/* Headerlogo */
+h1{
+   font-size: 80px;
+   line-height: 94px;
+   margin-bottom: 40px;
+}
+h1 a{
+   color: #000;
+}
+h1 span{
+   color: #4BCAFF;
+}
+
+/* Header Nav */
+.header-nav{
+   background-color: #35444F;
+   height: 70px;
+}
+.header-nav ul{
+   display: flex;
+   justify-content: center;
+}
+.header-nav li{
+   font-size: 24px;
+   color: #FFFFFF;
+   line-height: 24px;
+   padding: 23px 35px;
+   border-left: 1px solid #FFFFFF;
+   transition-duration: 0.5s;
+}
+.header-nav li:last-child{
+   border-left: 1px solid #FFFFFF;
+   border-right: 1px solid #FFFFFF;
+}
+.header-nav li:hover{
+   background-color: #222F3A;
+}
+
+/* Main block */
+main{
+   margin-top: 50px;
+}
+
+/* Aside Bar */
+.aside-bar{
+   border: 1px solid #495863;
+   width: 345px;
+}
+.aside-bar ul{
+   display: flex;
+   flex-direction: column;
+}
+.aside-bar li{
+   font-size: 27px;
+   line-height: 1;
+   padding: 25px 45px;
+   color: #485863;
+   transition-duration: 0.5s;
+}
+.aside-bar li:hover{
+   background-color: #DBDBDB;
+   padding: 25px 60px;
+   color: #000;
+}
+
+/* Main Content */
+.main-content{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+.article-content{
+   max-width: 885px;
+}
+.img-wrepper{
+   width: 885px;
+   height: 530px;
+   border: 1px solid #000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.main-content p{
+   margin-top: 35px;
+}
+
+/* Footer */
+.footer-content{
+   margin-top: 50px;
+   background-color: rgba(99, 105, 110, 0.48);
+   height: 70px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+/*.footer-content nav{
+   width: 70px;
+}*/
+.footer-nav-list{
+   display: flex;
+   align-items: center;
+}
+.footer-nav-list li{
+   font-size: 28px;
+   line-height: 28px;
+
+   margin-right: 20px;
+   color: #0C1927;
+   transition-duration: 0.5s;
+}
+.footer-nav-list li:hover{
+   font-size: 28px;
+   line-height: 28px;
+   padding-bottom: 5px;
+   color: #3181A6;
+   border-bottom: 1px solid #3181A6;
+}
+.footer-content p{
+   font-size: 24px;
+   line-height: 24px;
+}
