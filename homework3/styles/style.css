@@ -98,26 +98,27 @@ main{
    justify-content: space-around;
    align-items: center;
 }
-/*.footer-content nav{
-   width: 70px;
-}*/
+.footer-content nav{
+   width: 875px;
+}
 .footer-nav-list{
    display: flex;
+   justify-content: space-between;
    align-items: center;
 }
 .footer-nav-list li{
    font-size: 28px;
    line-height: 28px;
-
-   margin-right: 20px;
+   padding: 5px 0px;
    color: #0C1927;
    transition-duration: 0.5s;
 }
 .footer-nav-list li:hover{
    font-size: 28px;
    line-height: 28px;
-   padding-bottom: 5px;
+   padding: 5px 0px;
    color: #3181A6;
+   border-top: 1px  transparent;
    border-bottom: 1px solid #3181A6;
 }
 .footer-content p{
