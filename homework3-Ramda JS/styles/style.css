@@ -1,5 +1,5 @@
 /* Headerlogo */
-h1{
+h1 {
    font-size: 80px;
    line-height: 94px;
    margin-bottom: 40px;
@@ -22,11 +22,11 @@ h1 span{
    height: 70px;
    background-color: #35444F;
 }
-.header-nav ul{
+.nav-list{
    display: flex;
    justify-content: center;
 }
-.header-nav li{
+.nav-list li{
    padding: 23px 35px;
    font-size: 24px;
    color: #FFFFFF;
@@ -34,11 +34,11 @@ h1 span{
    border-left: 1px solid #FFFFFF;
    transition-duration: 0.5s;
 }
-.header-nav li:last-child{
+.nav-list li:last-child{
    border-left: 1px solid #FFFFFF;
    border-right: 1px solid #FFFFFF;
 }
-.header-nav li:hover{
+.nav-list li:hover{
    background-color: #222F3A;
 }
 
@@ -56,7 +56,8 @@ h1 span{
 
 /* Aside Bar */
 .aside-bar{
-   width: 345px;
+   max-width: 345px;
+   width: 100%;
    border: 1px solid #495863;
 }
 .aside-bar li{
@@ -78,8 +79,9 @@ h1 span{
    max-width: 885px;
 }
 .img-wrepper{
-   width: 885px;
-   height: 530px;
+   max-width: 885px;
+   git congiheight: 530px;
+   width: 100%;
    border: 1px solid #000;
    display: flex;
    justify-content: center;
@@ -100,7 +102,7 @@ h1 span{
    justify-content: space-around;
    align-items: center;
 }
-.footer-content nav{
+.footer-nav{
    width: 875px;
 }
 .footer-nav-list{
