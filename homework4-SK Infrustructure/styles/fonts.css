@@ -1,0 +1,32 @@
+@font-face {
+   font-family: "Gilam";
+   font-style: normal;
+   font-weight: 500;
+   font-display: swap;
+   src: url("../fonts/Gilam-Regular.woff2") format("woff2"),
+      url("../fonts/Gilam-Regular.woff") format("woff");
+}
+@font-face {
+   font-family: "Gilam";
+   font-style: heavy;
+   font-weight: 600;
+   font-display: swap;
+   src: url("../fonts/Gilam-Heavy.woff2") format("woff2"),
+   url("../fonts/Gilam-Heavy.woff") format("woff");
+}
+@font-face {
+   font-family: "Gilam";
+   font-style: bold;
+   font-weight: 700;
+   font-display: swap;
+   src: url("../fonts/Gilam-Bold.woff2") format("woff2"),
+      url("../fonts/Gilam-Bold.woff") format("woff");
+}
+@font-face {
+   font-family: "Circe";
+   font-style: normal;
+   font-weight: 500;
+   font-display: swap;
+   src: url("../fonts/CRC-Regular.woff2") format("woff2"),
+      url("../fonts/CRC-Regular.woff") format("woff");
+}
