@@ -1,20 +1,22 @@
 .grid-wrapper{
    background-color: #171717;
-   display: grid;
-   margin: auto;
+   /*display: grid;
    grid-template-rows: 105px 1fr 238px;
-   grid-template-columns: 12% 1fr 12%;
+   grid-template-columns: 12% 1fr 12%;*/
 }
 
-/*        Footer        */
+/*        Header        */
 
 .header {
-   max-width: 1460px;
+   width: 1460px;
+   margin: auto;
+   padding-top: 36px;
    grid-column: 2/3;
    display: grid;
    grid-template-columns: 1fr 163px 218px;
    gap: 38px;
    align-items: center;
+
 }
 .logo-img {
    height: 33px;
@@ -55,7 +57,9 @@
 /* Section1 */
 
 .main-content {
-   max-width: 1460px;
+   width: 1460px;
+   margin: auto;
+   padding-bottom: 238px;
    grid-row: 2/3;
    grid-column: 2/3 ;
 }
@@ -253,7 +257,7 @@
 .section3-wrapper-item2 {
    width: 482px;
    height: 390px;
-   background: rgba(232, 210, 171, 0.76);
+   background: rgb(232, 210, 171);
    display: flex;
    justify-content: center;
    align-items: center;
