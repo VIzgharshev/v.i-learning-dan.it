@@ -34,6 +34,7 @@
    text-align: center;
 }
 .img {
+   width: 100vw;
    margin-bottom: 49px;
 
 }
@@ -76,7 +77,7 @@
 /* FOOTER */
 
 .footer-text{
-   width: 1175px;
+   max-width: 1175px;
    margin: auto;
    text-align: right;
    padding-top: 82px;
