@@ -1,8 +1,30 @@
-let userName = prompt("Enter your name!");
-let userAge = +prompt("Enter your age!");
+//let userName;
+//userName = prompt("Enter your name!");
+//while (!userName) {
+//   alert("Неправильное имя!");
+//   prompt("Enter your name!", userName);
+//    }
+//let userAge = null;
+//    userAge = +prompt("Enter your age!");
+//while (!userAge || isNaN(userAge)) {
+//   alert("Неправильное возраст!");
+//   userAge = +prompt("Enter your age one more time!", userAge);
+//}
 
-if (userAge < 18) {
-   alert("You are not allowed to visit this website")
-} else if (18 < userAge <= 22) {
-   confirm("Are you sure you want to continue?")
-} 
+//if (userAge < 18) {
+//   alert("You are not allowed to visit this website");
+//} else if (userAge > 18 && userAge <= 22) {
+//   let conf = confirm("Are you sure you want to continue?");
+//   if (conf) {
+//      alert("Welcome, " + userName);
+//   }
+//   else  {
+//      alert("You are not allowed to visit this website");
+//      }
+//} else { 
+//   alert("Welcome, " + userName);
+//}
+
+//(!conf)
+//(userAge > 22)
+//isNaN(userAge)
