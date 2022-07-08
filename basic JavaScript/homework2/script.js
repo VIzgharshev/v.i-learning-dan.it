@@ -14,7 +14,7 @@ while (!userAge || isNaN(userAge)) {
 
 if (userAge < 18) {
    alert("You are not allowed to visit this website");
-} else if (userAge > 18 && userAge <= 22) {
+} else if (userAge >= 18 && userAge <= 22) {
    let checkAge = confirm("Are you sure you want to continue?");
    if (checkAge) {
       alert("Welcome, " + userName);
