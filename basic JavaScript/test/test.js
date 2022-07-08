@@ -22,6 +22,7 @@ console.log ("hi")
    let operation = prompt("choose operation");
    let num2 = +prompt("Input your num2");
    let calc2 = "";
+
 function calc() {
    if (operation = "+") {
       calc2 = num1 + num2;
