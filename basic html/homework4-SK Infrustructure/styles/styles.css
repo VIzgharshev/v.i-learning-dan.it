@@ -2,19 +2,18 @@
    background-color: #171717;
 }
 .wrapper{
-   height: 300vh;
    background: url(../img/header-bg.jpeg) center/cover no-repeat;
    background-attachment: fixed;
    position: relative;
 }
 
-/*        Header        */
+/*                               Header                             */
 
 .header-wrapper{
    background: rgba(14, 14, 14, 0.5);
 }
 .header {
-   width: 1460px;
+   max-width: 1460px;
    margin: auto;
    padding: 36px 0;
    grid-column: 2/3;
@@ -43,7 +42,7 @@
 }
 .call-button {
    border: 1px solid #E4B564;
-   width: 218px;
+   max-width: 218px;
    height: 50px;
    display: flex;
    justify-content: center;
@@ -58,7 +57,7 @@
    line-height: 30px;
 }
 
-/*        Main Contetnt        */
+/*                             Main Contetnt                   */
 
 .main-content {
    /*width: 1460px;
@@ -68,7 +67,7 @@
    grid-column: 2/3 ;
 }
 
-/* Section1 */
+/*                              Section1                     */
 
 .section1{
    width: 1460px;
@@ -141,7 +140,7 @@
    padding: 220px 44px;
 }
 
-/* Section2 */
+/*                      Section2                     */
 
 .section2{
    width: 1460px;
@@ -228,12 +227,12 @@
    padding-left: 50px;
 }
 
-/* Section3 */
+/*                        Section3                         */
 
 .section3-wrapper{
    height: 1054px;
    background-attachment: fixed;
-   background: rgba(14, 14, 14, 0.5);
+   background: rgba(14, 14, 14, 1);
    /*background: url(../img/parallax-bg.jpeg) center/cover no-repeat;*/
 }
 .section3-iner-wrapper{
