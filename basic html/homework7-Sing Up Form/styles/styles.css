@@ -297,11 +297,11 @@
    color: #01813F;
 }
 
-.checkbox input[type="checkbox"]:checked,
+/*.checkbox input[type="checkbox"]:checked,
 .checkbox input[type="checkbox"]:not(:checked) {
    position: absolute;
    left: -9999px;
-}
+}*/
 
 .checkbox input[type="checkbox"]:checked + label,
 .checkbox input[type="checkbox"]:not(:checked) + label {
