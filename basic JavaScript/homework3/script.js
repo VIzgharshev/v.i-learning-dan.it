@@ -16,14 +16,3 @@ for (let i = 0; i <= num; i++) {
       break;
    }
 }
-
-
-//for (let i = num; i >= num2; i--) {
-//   if (i % 5 == 0 && i !== 0) {
-//      console.log(i);
-//   }
-//   if (num <= 4) {
-//      alert("Sorry, no numbers");
-//      break;
-//   }
-//}
