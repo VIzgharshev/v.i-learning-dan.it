@@ -2,7 +2,7 @@ let userName;
 userName = prompt("Enter your name!");
 while (!userName) {
    alert("Неправильное имя!");
-   prompt("Enter your name!", userName);
+   userName = prompt("Enter your name!", userName);
     }
 let userAge = null;
     userAge = +prompt("Enter your age!");
