@@ -297,11 +297,12 @@
    color: #01813F;
 }
 
-/*.checkbox input[type="checkbox"]:checked,
+.checkbox input[type="checkbox"]:checked,
 .checkbox input[type="checkbox"]:not(:checked) {
    position: absolute;
-   left: -9999px;
-}*/
+   z-index: -2;
+   opacity: 0;
+}
 
 .checkbox input[type="checkbox"]:checked + label,
 .checkbox input[type="checkbox"]:not(:checked) + label {
@@ -315,7 +316,6 @@
 .checkbox input[type="checkbox"]:checked + label::before,
 .checkbox input[type="checkbox"]:not(:checked) + label::before {
    content: '';
-   display: block;
    position: absolute;
    left: 0px;
    top: 0px;
@@ -329,7 +329,6 @@
 .checkbox input[type="checkbox"]:checked + label::after,
 .checkbox input[type="checkbox"]:not(:checked) + label::after {
    content: '';
-   display: block;
    width: 14px;
    height: 14px;
    background: url(../img/Checked.svg) center/cover no-repeat;
@@ -341,12 +340,9 @@
 .checkbox input[type="checkbox"]:not(:checked) + label::after {
    opacity: 0;
 }
-/*.checkbox input[type="checkbox"]:checked + label:after {
+.checkbox input[type="checkbox"]:checked + label:after {
    opacity: 1;
 }
-
-
-}*/
 
 
 /*                    Form Button                   */
