@@ -1,10 +1,11 @@
 'use strict'
 let num = null;
-    num = +prompt("Choose your number");
-while (!num || isNaN(num) || !Number.isInteger(num)){
+    num = prompt("Choose your number");
+while (!num || Number.isNaN(+num) || !Number.isInteger(+num)){
    alert("Choose integer number!");
-   num = +prompt("Choose your number", "integer plese");
+   num = prompt("Choose your number", num);
 }
+num = +num
 
 for (let i = 0; i <= num; i++) {
    if (i % 5 == 0) {

@@ -14,11 +14,6 @@ while (!num2 || Number.isNaN(+num2)){
 }
 num2 = +num2;
 
-//while (!num2 || isNaN(num2)){
-//   alert('Choose number!');
-//   num2 = +prompt('Enter number!', num2);
-//}
-
 let operation = prompt('choose operation: +, -, /, *.');
 while (!operation || operation !== "+" || operation !== "-" || operation !== "*" || operation !== "/"){
    alert("Choose only operator");
