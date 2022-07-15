@@ -1,6 +1,6 @@
 function createNewUser() {
-   const firstName = prompt('Enter your first name!');       // получаем имя
-   const lastName = prompt('Enter your last name!');         // получаем фамилию
+   const firstName = prompt('Enter your first name!');
+   const lastName = prompt('Enter your last name!');
 
    const newUser = {
       firstName,
@@ -10,7 +10,7 @@ function createNewUser() {
          return finalAbr.toLowerCase();
       }
    }
-   return newUser.getLogin();
+      return newUser.getLogin();
 }
 
 console.log(createNewUser());
