@@ -6,14 +6,12 @@ while (!num || Number.isNaN(+num) || !Number.isInteger(+num)){
    num = prompt("Choose your number", num);
 }
 num = +num
-
+if (num <= 4) {
+   let messege = "Sorry, no numbers";
+   console.log(messege);
+}
 for (let i = 0; i <= num; i++) {
    if (i % 5 == 0) {
       console.log(i);
    }
-   if (num <= 4) {
-      let messege = "Sorry, no numbers";
-      console.log(messege);
-      break;
-   };
 }
