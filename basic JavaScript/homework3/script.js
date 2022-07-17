@@ -5,6 +5,7 @@ while (!num || Number.isNaN(+num) || !Number.isInteger(+num)){
    alert("Choose integer number!");
    num = prompt("Choose your number", num);
 }
+
 num = +num
 
 if (num <= 4) {
