@@ -1,5 +1,5 @@
 'use strict'
-let num = null;
+let num;
     num = prompt("Choose your number");
 while (!num || Number.isNaN(+num) || !Number.isInteger(+num)){
    alert("Choose integer number!");
@@ -8,11 +8,11 @@ while (!num || Number.isNaN(+num) || !Number.isInteger(+num)){
 num = +num
 
 if (num <= 4) {
-   let messege = "Sorry, no numbers";
-   console.log(messege);
+   let message = "Sorry, no numbers";
+   console.log(message);
 }
 for (let i = 0; i <= num; i++) {
-   if (i % 5 == 0) {
+   if (i % 5 === 0) {
       console.log(i);
    }
 }
