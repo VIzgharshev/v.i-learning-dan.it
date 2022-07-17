@@ -6,11 +6,13 @@ function createNewUser() {
       firstName,
       lastName,
       getLogin() {
-         let finalAbr = firstName[0] + lastName;
+         const finalAbr = this.firstName[0] + this.lastName;
          return finalAbr.toLowerCase();
       }
    }
-      return newUser.getLogin();
+      return newUser;
 }
 
-console.log(createNewUser());
+const creatUser = createNewUser();
+
+console.log(creatUser.getLogin());
