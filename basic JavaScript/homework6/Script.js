@@ -9,12 +9,9 @@ function createNewUser() {
     let birthMonth = +birthday[1];
     let birthYear = +birthday[2];
 
-    let localDate = new Date();
-    localDate = localDate.toLocaleDateString().split('/');  // У меня
-
-    let localDay = +localDate[1];
-    let localMonth = +localDate[0];
-    let localYear = +localDate[2];
+    let localDay = new Date().getDate();
+    let localMonth = new Date().getMonth();
+    let localYear = new Date().getFullYear();
 
     return {
         firstName,
