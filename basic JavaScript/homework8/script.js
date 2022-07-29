@@ -7,7 +7,9 @@ for (let i of pCollection) {
 //----------------Second Task----------------//
 let elem = document.getElementById('optionsList');
 console.log(elem);
+
 console.log(elem.parentElement);
+
 let elemChildren = elem.children;
 for (let child of elemChildren) {
     console.log(child.nodeName, child.nodeType);
@@ -19,7 +21,7 @@ document.querySelector('#testParagraph').textContent = 'This is a paragraph';
 //----------------Fourth Task----------------//
 let mainHeader = document.body.firstElementChild.children;
 for (let elem of mainHeader) {
-    elem.c = 'nav-item';
+    elem.className = 'nav-item';
 }
 console.log(mainHeader);
 
