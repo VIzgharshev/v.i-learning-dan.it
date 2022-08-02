@@ -15,5 +15,4 @@ function getInList(a, b = document.body) {
         ulWrapper.append(listUl);
     }
 }
-
 getInList(["hello", "world", "Kiev", "Kharkiv", "Odessa", "Lviv"], 'div');
