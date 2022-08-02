@@ -1,19 +1,10 @@
 let arr1 = ["hello", "world", "Kiev", "Kharkiv", "Odessa", "Lviv"];
+const listUl = document.createElement('div');
 
 function getInList(a, b = document.body) {
-    const listUl = document.createElement('ul');
-    a.map((elem) => {
-        const li = document.createElement('li');
-        li.innerHTML = elem;
-        listUl.append(li);
-    });
-    if (b === document.body) {
-        document.body.append(listUl);
-    } else {
-        const ulWrapper = document.createElement(b);
-        document.body.append(ulWrapper);
-        ulWrapper.append(listUl);
-    }
+    b.insertAdjacentHTML("beforeend", `<ul>${a.map(elem => {
+        return `<li>${elem}</li>`
+    }).join('')}</ul>`);
 }
-
-getInList(["hello", "world", "Kiev", "Kharkiv", "Odessa", "Lviv"], 'div');
+document.body.append(listUl);
+getInList(["hello", "world", "Kiev", "Kharkiv", "Odessa", "Lviv"], listUl);
