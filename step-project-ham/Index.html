@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Step Project Ham</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/reset.css">
     <link rel="stylesheet" href="./Styles/Style.css">
+    <title>Step Project Ham</title>
 </head>
 
 <body>
@@ -62,39 +63,38 @@
                   d="M9.65845 11.9026C14.9691 11.9026 19.2741 16.1757 19.2741 21.4484C19.2741 26.7195 14.9691 30.993 9.65845 30.993C4.34797 30.993 0.0429109 26.7195 0.0429109 21.4484L0 20.0841C0 9.54111 8.61007 0.993652 19.2312 0.993652V6.44727C15.562 6.44727 12.1124 7.86613 9.51792 10.4424C9.0185 10.9377 8.56269 11.466 8.15163 12.0211C8.64259 11.9451 9.14578 11.9026 9.65845 11.9026ZM34.3844 11.9026C39.6949 11.9026 43.9999 16.1757 43.9999 21.4484C43.9999 26.7195 39.6949 30.993 34.3844 30.993C29.0738 30.993 24.7687 26.7195 24.7687 21.4484L24.7258 20.0841C24.7258 9.54111 33.336 0.993652 43.957 0.993652V6.44727C40.2879 6.44727 36.8383 7.86613 34.2438 10.4424C33.7443 10.9377 33.2886 11.466 32.8774 12.0211C33.3685 11.9451 33.8715 11.9026 34.3844 11.9026Z"
                   clip-rule="evenodd"/>
         </g>
-        <g id="img-search">
-            <path xmlns="http://www.w3.org/2000/svg"
-                  d="M402.79,357.79A109.67,109.67,0,1,0,358.54,402l97.39,97.5a28.84,28.84,0,0,0,40.71,0l3.53-3.53a28.74,28.74,0,0,0,0-40.71Zm-96.27-139A87.18,87.18,0,1,1,245,244.34a87.09,87.09,0,0,1,61.54-25.54Zm177.8,261.35-3.52,3.53a6.33,6.33,0,0,1-9,0l-94.47-94.47a102.52,102.52,0,0,0,12.54-12.55l94.47,94.48a6.34,6.34,0,0,1,1.91,4.53,6.15,6.15,0,0,1-1.91,4.48Z"
-                  transform="translate(-196.71 -195.95)"/>
-        </g>
     </defs>
 </svg>
 
 <div class="home-wrapper">
-    <header class="header">
-        <a href="#" class="header-logo">
-            <svg width="58" height="67" viewBox="0 0 58 67" xmlns="http://www.w3.org/2000/svg" version="1.1"
-                 preserveAspectRatio="xMinYMin">
-                <use xlink:href="#img-logo"></use>
-            </svg>
-            <span class="header-logo-part">the<span>Ham</span></span>
-        </a>
-        <ul class="header-menu">
-            <li class="menu-item">home</li>
-            <li class="menu-item">About</li>
-            <li class="menu-item">Blog</li>
-            <li class="menu-item">Skills</li>
-            <li class="menu-item">Service</li>
-            <li class="menu-item">Work</li>
-            <li class="menu-item">Testimonial</li>
-        </ul>
-    </header>
+    <div class="header-wrapper">
+        <header class="header">
+            <a href="#" class="header-logo">
+                <svg width="58" height="67" viewBox="0 0 58 67" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                     preserveAspectRatio="xMinYMin">
+                    <use xlink:href="#img-logo"></use>
+                </svg>
+                <span class="header-logo-part">the<span>Ham</span></span>
+            </a>
+            <ul class="header-menu">
+                <li class="menu-item"><a href="#">home</a></li>
+                <li class="menu-item"><a href="#">About</a></li>
+                <li class="menu-item"><a href="#">Blog</a></li>
+                <li class="menu-item"><a href="#">Skills</a></li>
+                <li class="menu-item"><a href="#">Service</a></li>
+                <li class="menu-item"><a href="#">Work</a></li>
+                <li class="menu-item"><a href="#">Testimonial</a></li>
+            </ul>
+        </header>
+    </div>
     <section class="home">
         <h2>The Ham is <span>Wordpress theme</span></h2>
         <h1>we are creative</h1>
         <h3>Just Buy And Enjoy These Awesome Features</h3>
-        <button type="button" class="home-btn left">explore now</button>
-        <button type="button" class="home-btn right">purchase now</button>
+        <div class="home-button-wrapper">
+            <button type="button" class="home-btn-left">explore now</button>
+            <button type="button" class="home-btn-right">purchase now</button>
+        </div>
     </section>
 </div>
 
