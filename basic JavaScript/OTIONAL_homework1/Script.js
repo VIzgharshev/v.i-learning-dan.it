@@ -3,9 +3,10 @@ while (!userNum || Number.isNaN(+userNum)) {
     userNum = +prompt('Enter your number please!');
 }
 
-// function createFactorial () {
-//     let n = userNum - 1;
-//     let result = userNum
-//     createFactorial()
-// }
+function createFactorial () {
+    let result = ''
+    for (let i = userNum; 1 < userNum; i--) {
+        result =
+    }
+}
 
