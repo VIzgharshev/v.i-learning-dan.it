@@ -8,7 +8,8 @@
     background: url("../imgs/Sections background/section-1(header).jpg") center/cover no-repeat;
     height: 100vh;
 }
-.header-wrapper{
+
+.header-wrapper {
     min-height: 120px;
     margin: auto;
     display: flex;
@@ -16,6 +17,7 @@
     align-items: center;
     background: rgba(29, 29, 29, 0.46);
 }
+
 .header-wrapper .header {
     min-width: 1160px;
     color: #FFFFFF;
@@ -23,21 +25,25 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .header-wrapper .header-logo {
     display: flex;
     align-items: center;
     gap: 6px;
 }
+
 .header-wrapper .header-logo .header-logo-part {
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 48px;
 }
+
 .header-wrapper .header-logo .header-logo-part span {
     font-weight: 700;
     color: #18CFAB;
 }
+
 .header-wrapper .header-menu {
     text-transform: uppercase;
     font-weight: 700;
@@ -45,11 +51,13 @@
     gap: 21px;
     color: rgba(255, 255, 255, 0.6);
 }
+
 .header-wrapper .header-menu::after {
     content: url("../imgs/icons/Search icon 1.svg");;
     width: 20px;
     height: 20px;
 }
+
 .home-wrapper .home {
     max-width: 1160px;
     margin: auto;
@@ -58,6 +66,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 .home-wrapper .home h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -65,11 +74,13 @@
     color: #FFFFFF;
     margin-bottom: 22px;
 }
+
 .home-wrapper .home h2 span {
     font-weight: 700;
     font-size: 35px;
     color: #18CFAB;
 }
+
 .home-wrapper .home h1 {
     text-transform: uppercase;
     font-weight: 700;
@@ -77,15 +88,18 @@
     color: #FFFFFF;
     margin-bottom: 22px;
 }
+
 .home-wrapper .home h3 {
     font-weight: 400;
     font-size: 34px;
     color: #D4D4D4;
     margin-bottom: 129px;
 }
-.home-wrapper .home .home-button-wrapper{
+
+.home-wrapper .home .home-button-wrapper {
 
 }
+
 .home-wrapper .home .home-button-wrapper .home-btn-left {
     min-width: 168px;
     height: 68px;
@@ -102,6 +116,7 @@
     font-size: 15px;
     line-height: 32px;
 }
+
 .home-wrapper .home .home-button-wrapper .home-btn-right {
     min-width: 168px;
     height: 68px;
@@ -118,4 +133,78 @@
     font-size: 15px;
     line-height: 32px;
 }
+
+/*----------------------------OPTIONS------------------------------*/
+
+.option-wrapper .options {
+    display: flex;
+}
+
+.option-wrapper .options .options-item {
+    width: calc(100% / 4);
+    min-height: 360px;
+    text-align: center;
+    background: #1C2A33;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.option-wrapper .options .options-item:nth-child(even) {
+    background: #18CFAB;
+    color: #FFFFFF;
+}
+
+.option-wrapper .options .options-item {
+    text-transform: uppercase;
+    color: #18CFAB;
+}
+
+.option-wrapper .options .options-item h3 {
+    padding-top: 48px;
+}
+
+/*----------------------------OUR SERVICES------------------------------*/
+.our-services {
+    max-width: 1160px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-services h2 {
+    margin: 90px 0 90px 0;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #4E4E4E;
+}
+
+.list-services-titles {
+    display: flex;
+}
+
+.service-article {
+    display: none;
+}
+
+.visible {
+    display: initial;
+}
+
+.article-content-wrapper {
+    display: flex;
+
+}
+
+
+/*----------------------------OUR SERVICES------------------------------*/
+
 
