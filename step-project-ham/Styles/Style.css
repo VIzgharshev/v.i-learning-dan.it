@@ -2,28 +2,28 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/*-------------Home-------------*/
-
-.home-wrapper {
-    background: url("../imgs/Sections background/section-1(header).jpg") center/cover no-repeat;
-    height: 100vh;
+.page-wrapper {
+    min-width: 1200px;
 }
 
+/*-------------Header-------------*/
+
+
 .header-wrapper {
+    width: 100%;
     min-height: 120px;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: rgba(29, 29, 29, 0.46);
+    position: absolute;
 }
 
 .header-wrapper .header {
-    min-width: 1160px;
+    max-width: 1160px;
+    margin: 26px auto;
     color: #FFFFFF;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header-wrapper .header-logo {
@@ -58,16 +58,21 @@
     height: 20px;
 }
 
-.home-wrapper .home {
-    max-width: 1160px;
-    margin: auto;
-    margin-top: 251px;
+.home {
+    background: url("../imgs/Sections background/section-1(header).jpg") center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-content{
+    margin-top: 366px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.home-wrapper .home h2 {
+.home .home-content h2 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 35px;
@@ -75,13 +80,13 @@
     margin-bottom: 22px;
 }
 
-.home-wrapper .home h2 span {
+.home .home-content h2 span {
     font-weight: 700;
     font-size: 35px;
     color: #18CFAB;
 }
 
-.home-wrapper .home h1 {
+.home .home-content h1 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 78px;
@@ -89,18 +94,14 @@
     margin-bottom: 22px;
 }
 
-.home-wrapper .home h3 {
+.home .home-content h3 {
     font-weight: 400;
     font-size: 34px;
     color: #D4D4D4;
     margin-bottom: 129px;
 }
 
-.home-wrapper .home .home-button-wrapper {
-
-}
-
-.home-wrapper .home .home-button-wrapper .home-btn-left {
+.home .home-content .home-button-wrapper .home-btn-left {
     min-width: 168px;
     height: 68px;
     margin: 0 13px;
@@ -117,7 +118,7 @@
     line-height: 32px;
 }
 
-.home-wrapper .home .home-button-wrapper .home-btn-right {
+.home .home-content .home-button-wrapper .home-btn-right {
     min-width: 168px;
     height: 68px;
     margin: 0 13px;
