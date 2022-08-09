@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Homework-buttons</title>
+    <style>
+        .password-form {
+            margin: 50px auto;
+            max-width: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-wrapper {
+            position: relative;
+            width: 200px;
+
+        }
+
+        .input-wrapper input {
+            min-width: 120px;
+            margin-top: 10px;
+            padding: 10px;
+            margin-bottom: 24px;
+        }
+
+        .input-wrapper span {
+            position: absolute;
+            right: 0;
+            top: 38px;
+            color: grey;
+        }
+
+        .fas {
+            cursor: pointer;
+        }
+
+        .invisible {
+            display: none;
+        }
+
+        .btn {
+            width: 165px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+<form class="password-form" action="#" type="POST">
+    <label class="input-wrapper">
+        Ввести пароль
+        <input type="password"/>
+        <span class="fas fa-eye icon-password"></span>
+        <span class="fas fa-eye-slash icon-password invisible"></span>
+    </label>
+    <label class="input-wrapper">
+        Подтвердить пароль
+        <input type="password"/>
+        <span class="fas fa-eye icon-password"></span>
+        <span class="fas fa-eye-slash icon-password invisible"></span>
+    </label>
+    <button type="submit" class="btn">Подтвердить</button>
+</form>
+<script src="./script.js"></script>
+</body>
+</html>
