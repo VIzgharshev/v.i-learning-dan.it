@@ -26,7 +26,7 @@
         .input-wrapper input {
             min-width: 120px;
             padding: 10px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         .input-wrapper i {
@@ -37,10 +37,17 @@
         }
 
         .btn {
-            width: 150px;
+            width: 169px;
         }
 
-        .invisible {
+        .warning-message {
+            display: block;
+            margin-bottom: 10px;
+            color: #ff2100;
+            font-size: 16px;
+        }
+
+        .hidden {
             display: none;
         }
     </style>
@@ -49,18 +56,19 @@
 <form class="password-form" action="#" type="POST">
     <label class="input-wrapper">
         Ввести пароль
-        <input class="input" type="password" data-first="first"/>
-        <i class="fas fa-eye" data-first="first"></i>
-        <i class="fas fa-eye-slash invisible" data-first="first"></i>
+        <input class="input-first" type="password" required/>
+        <i class="fas fa-eye icon-password"></i>
+<!--        <i class="fas fa-eye-slash icon-password"></i>-->
     </label>
     <label class="input-wrapper">
         Подтвердить пароль
-        <input class="input" type="password" data-second="second"/>
-        <i class="fas fa-eye" data-second="second"></i>
-        <i class="fas fa-eye-slash invisible" data-second="second"></i>
+        <input class="input-second" type="password" required/>
+        <i class="fas fa-eye icon-password"></i>
+<!--        <i class="fas fa-eye-slash icon-password"></i>-->
     </label>
+    <span class="warning-message hidden" >Нужно ввести одинаковые значения</span>
     <button type="submit" class="btn">Подтвердить</button>
-    <script src="./script.js"></script>
 </form>
+<script src="./script.js"></script>
 </body>
 </html>
