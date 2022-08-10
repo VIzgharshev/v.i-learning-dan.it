@@ -13,8 +13,6 @@
     <title>Homework-buttons</title>
     <style>
         .password-form {
-            margin: 50px auto;
-            max-width: 200px;
             display: flex;
             flex-direction: column;
         }
@@ -27,49 +25,42 @@
 
         .input-wrapper input {
             min-width: 120px;
-            margin-top: 10px;
             padding: 10px;
             margin-bottom: 24px;
         }
 
-        .input-wrapper span {
+        .input-wrapper i {
             position: absolute;
-            right: 0;
-            top: 38px;
+            right: 25px;
+            top: 30px;
             color: grey;
         }
 
-        .fas {
-            cursor: pointer;
+        .btn {
+            width: 150px;
         }
 
         .invisible {
             display: none;
         }
-
-        .btn {
-            width: 165px;
-            height: 50px;
-        }
-
     </style>
 </head>
 <body>
 <form class="password-form" action="#" type="POST">
     <label class="input-wrapper">
         Ввести пароль
-        <input type="password"/>
-        <span class="fas fa-eye icon-password"></span>
-        <span class="fas fa-eye-slash icon-password invisible"></span>
+        <input class="input" type="password" data-first="first"/>
+        <i class="fas fa-eye" data-first="first"></i>
+        <i class="fas fa-eye-slash invisible" data-first="first"></i>
     </label>
     <label class="input-wrapper">
         Подтвердить пароль
-        <input type="password"/>
-        <span class="fas fa-eye icon-password"></span>
-        <span class="fas fa-eye-slash icon-password invisible"></span>
+        <input class="input" type="password" data-second="second"/>
+        <i class="fas fa-eye" data-second="second"></i>
+        <i class="fas fa-eye-slash invisible" data-second="second"></i>
     </label>
     <button type="submit" class="btn">Подтвердить</button>
+    <script src="./script.js"></script>
 </form>
-<script src="./script.js"></script>
 </body>
 </html>
