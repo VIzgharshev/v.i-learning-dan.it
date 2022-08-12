@@ -10,7 +10,6 @@ for (let btn of buttons) {
 
 document.addEventListener("keydown", event => {
     let keyCode = event.code;
-    
     if(document.querySelector(`.${keyCode}`)){
         for (const btn of buttons) {
             btn.style.backgroundColor = '';
