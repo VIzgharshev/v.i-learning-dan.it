@@ -1,15 +1,13 @@
-const icons = document.querySelectorAll('.icon-password');
+const form = document.querySelector('.password-form');
 
-icons.forEach(elem => {
-    elem.addEventListener('click', event => {
-        event.target.classList.toggle('fa-eye');
-        event.target.classList.toggle('fa-eye-slash');
-        if (event.target.classList.contains('fa-eye')) {
-            event.target.previousElementSibling.setAttribute('type', 'password');
-        } else {
-            event.target.previousElementSibling.setAttribute('type', 'text');
-        }
-    })
+form.addEventListener('click', event => {
+    event.target.classList.toggle('fa-eye');
+    event.target.classList.toggle('fa-eye-slash');
+    if (event.target.classList.contains('fa-eye')) {
+        event.target.previousElementSibling.setAttribute('type', 'password');
+    } else {
+        event.target.previousElementSibling.setAttribute('type', 'text');
+    }
 })
 
 const button = document.querySelector('.btn');
@@ -25,6 +23,18 @@ button.addEventListener('click', event => {
         warning.classList.remove('hidden')
     )
 })
+
+// icons.forEach(elem => {
+//     elem.addEventListener('click', event => {
+//         event.target.classList.toggle('fa-eye');
+//         event.target.classList.toggle('fa-eye-slash');
+//         if (event.target.classList.contains('fa-eye')) {
+//             event.target.previousElementSibling.setAttribute('type', 'password');
+//         } else {
+//             event.target.previousElementSibling.setAttribute('type', 'text');
+//         }
+//     })
+// })
 
 // const iconsOpen = document.querySelectorAll('.fa-eye');
 // iconsOpen.forEach(elem => {
