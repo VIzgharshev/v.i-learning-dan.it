@@ -2,36 +2,19 @@ const buttons = document.querySelectorAll('.btn');
 
 for (let btn of buttons) {
     if (btn.innerHTML === "Enter") {
-        btn.classList.add('enter');
+        btn.classList.add('Enter');
     } else {
-        btn.classList.add('key');
+        btn.classList.add(`Key${btn.innerHTML}`);
     }
 }
 
-const otherKeys = document.querySelectorAll('.key');
-const enterKey = document.querySelector('.enter');
-// console.log(enterKey)
-
-window.addEventListener("keydown", event => {
-    // console.log(event.code)
-    // console.log(event.key)
-    if (event.code === enterKey.innerHTML) {
-        // buttons.forEach(btn => {
-        //     btn.removeAttributeNode(style)
-        // })
-        enterKey.style.backgroundColor = 'blue';
-    } else {
-        const keyCode = 'Key' + key.innerHTML;
-        if (event.code === keyCode) {
-            buttons.forEach(btn => {
-                btn.removeAttributeNode('style')
-            })
-            key.style.backgroundColor = 'blue';
+document.addEventListener("keydown", event => {
+    let keyCode = event.code;
+    
+    if(document.querySelector(`.${keyCode}`)){
+        for (const btn of buttons) {
+            btn.style.backgroundColor = '';
         }
-        // for (let key of otherKeys) {
-        //
-        //     break;
-        // }
+        document.querySelector(`.${keyCode}`).style.backgroundColor = 'blue';
     }
-
 })
