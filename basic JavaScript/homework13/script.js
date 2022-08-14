@@ -14,9 +14,13 @@ function showImg() {
         counterImg = 0;
     }
 }
+document.addEventListener('DOMContentLoaded', event => {
+    startStop = setInterval(showImg, 3000);
+})
 btnStart.addEventListener('click', event => {
     startStop = setInterval(showImg, 3000);
 })
 btnStop.addEventListener('click', event => {
     clearInterval(startStop);
 })  
+
