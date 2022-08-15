@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', event => {
     startStop = setInterval(showImg, 3000);
 })
 btnStart.addEventListener('click', event => {
+    clearInterval(startStop)
     startStop = setInterval(showImg, 3000);
 })
 btnStop.addEventListener('click', event => {
