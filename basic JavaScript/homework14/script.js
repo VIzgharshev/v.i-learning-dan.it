@@ -30,6 +30,7 @@ window.addEventListener('load', event => {
     }
 })
 btnStart.addEventListener('click', event => {
+    clearInterval(startStop);
     startStop = setInterval(showImg, 3000);
 })
 btnStop.addEventListener('click', event => {
