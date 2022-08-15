@@ -241,7 +241,7 @@
     align-items: center;
 }
 
-.our-services h2 {
+.our-services h3 {
     margin: 90px 0 90px 0;
     font-weight: 400;
     font-size: 36px;
@@ -250,7 +250,7 @@
     position: relative;
 }
 
-.our-services h2::before {
+.our-services h3::before {
     content: '';
     width: 78px;
     height: 2px;
@@ -260,7 +260,7 @@
     left: 68px;
 }
 
-.our-services h2::after {
+.our-services h3::after {
     content: '';
     width: 78px;
     height: 2px;
@@ -396,8 +396,6 @@
 
 .our-work-wrapper {
     min-height: 1212px;
-    display: flex;
-    flex-direction: column;
 }
 
 .our-work-wrapper .our-work-title {
@@ -405,27 +403,49 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
+    color: #4E4E4E;
+    position: relative;
+    width: fit-content;
+}
+
+.our-work-wrapper .our-work-title::before {
+    content: '';
+    width: 78px;
+    height: 2px;
+    position: absolute;
+    background: #18CFAB;
+    bottom: -26px;
+    left: 130px;
+}
+
+.our-work-wrapper .our-work-title::after {
+    content: '';
+    width: 78px;
+    height: 2px;
+    position: absolute;
+    background: #18CFAB;
+    bottom: -34px;
+    left: 142px;
 }
 
 .our-work-wrapper .list-filter-titles {
     box-sizing: border-box;
     margin: 0 auto;
     display: flex;
+    width: fit-content;
 }
 
 .our-work-wrapper .list-filter-titles .filter-title {
     padding: 14px 27px;
-    border-top: solid 1px #DADADA;
-    border-bottom: solid 1px #DADADA;
-    border-right: solid 1px #DADADA;
+    border:  solid 1px #DADADA;
+    cursor: pointer;
 }
 
-.our-work-wrapper .list-filter-titles .filter-title:last-child {
-    border-right: solid 1px #DADADA;
-}
-
-.our-work-wrapper .list-filter-titles .filter-title:first-child {
-    border: solid 1px #DADADA;
+.list-filter-titles .filter-active {
+    padding: 14px 27px;
+    color: #18CFAB;
+    border: solid 2px #18CFAB;
+    cursor: pointer;
 }
 
 .our-work-wrapper .list-filter-titles .filter-title:hover {
@@ -434,11 +454,26 @@
     border: solid 1px #18CFAB;
 }
 
-/*.list-filter-titles .active-filter {*/
-/*    color: #18CFAB;*/
-/*    padding: 14px 27px;*/
-/*    border: solid 2px #18CFAB;*/
-/*}*/
+.our-work-wrapper .more-img-btn {
+    margin: auto;
+    width: 168px;
+    height: 63px;
+    background-color: #18CFAB;
+    border-radius: 5px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 42px;
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
 
 /*----------------------------OUR AMAZING WORKS------------------------------*/
 
