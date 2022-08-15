@@ -19,7 +19,8 @@
 
 .header-wrapper .header {
     max-width: 1160px;
-    margin: 26px auto;
+    min-height: 120px;
+    margin: auto;
     color: #FFFFFF;
     display: flex;
     align-items: center;
@@ -45,11 +46,14 @@
 }
 
 .header-wrapper .header-menu {
+    min-height: 120px;
     text-transform: uppercase;
     font-weight: 700;
     display: flex;
     gap: 21px;
     color: rgba(255, 255, 255, 0.6);
+    justify-content: center;
+    align-items: center;
 }
 
 .header-wrapper .header-menu::after {
@@ -58,6 +62,17 @@
     height: 20px;
 }
 
+.header-wrapper .header-menu .menu-item {
+    min-height: 120px;
+    padding-top: calc(101px / 2);
+    transition: border-bottom 0.1s ease;
+}
+
+.header-wrapper .header-menu .menu-item:hover {
+    min-height: 120px;
+    padding-top: calc(101px / 2);
+    border-bottom: solid 3px #18CFAB;
+}
 
 
 /*----------------------------HOME------------------------------*/
@@ -113,7 +128,7 @@
     background: #18CFAB;
     border-radius: 5px;
     box-shadow: 0 -5px 0 0;
-    transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.1s ease;
 
     position: relative;
 
@@ -272,12 +287,16 @@
 }
 
 .list-services-titles .service-title:hover {
+    border: solid 1px #18CFAB;
+}
+
+.list-services-titles .active-service {
     color: #FFFFFF;
-    background: #18CFAB;
+    background-color: #18CFAB;
     position: relative;
 }
 
-.list-services-titles .service-title:hover::after {
+.list-services-titles .active-service::after {
     content: '';
     width: 15px;
     height: 15px;
@@ -286,11 +305,6 @@
     position: absolute;
     left: 86px;
     bottom: -8px;
-}
-
-
-.service-article {
-    display: none;
 }
 
 .service-article {
@@ -350,7 +364,7 @@
     background: #18CFAB;
     border-radius: 5px;
     box-shadow: 0 -5px 0 0;
-    transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.1s ease;
 
     position: relative;
 
@@ -378,8 +392,54 @@
     line-height: 32px;
 }
 
+/*----------------------------OUR AMAZING WORKS------------------------------*/
 
+.our-work-wrapper {
+    min-height: 1212px;
+    display: flex;
+    flex-direction: column;
+}
 
-/*----------------------------PURCHASE NOW------------------------------*/
+.our-work-wrapper .our-work-title {
+    margin: 95px auto 93px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.our-work-wrapper .list-filter-titles {
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+}
+
+.our-work-wrapper .list-filter-titles .filter-title {
+    padding: 14px 27px;
+    border-top: solid 1px #DADADA;
+    border-bottom: solid 1px #DADADA;
+    border-right: solid 1px #DADADA;
+}
+
+.our-work-wrapper .list-filter-titles .filter-title:last-child {
+    border-right: solid 1px #DADADA;
+}
+
+.our-work-wrapper .list-filter-titles .filter-title:first-child {
+    border: solid 1px #DADADA;
+}
+
+.our-work-wrapper .list-filter-titles .filter-title:hover {
+    padding: 14px 27px;
+    color: #18CFAB;
+    border: solid 1px #18CFAB;
+}
+
+/*.list-filter-titles .active-filter {*/
+/*    color: #18CFAB;*/
+/*    padding: 14px 27px;*/
+/*    border: solid 2px #18CFAB;*/
+/*}*/
+
+/*----------------------------OUR AMAZING WORKS------------------------------*/
 
 
