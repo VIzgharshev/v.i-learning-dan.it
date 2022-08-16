@@ -13,7 +13,7 @@
     width: 100%;
     min-height: 120px;
     margin: auto;
-    background: rgba(29, 29, 29, 0.46);
+    background: rgba(94, 93, 88, 0.6);
     position: absolute;
 }
 
@@ -241,7 +241,7 @@
     align-items: center;
 }
 
-.our-services h3 {
+.our-services .our-services-title {
     margin: 90px 0 90px 0;
     font-weight: 400;
     font-size: 36px;
@@ -250,17 +250,17 @@
     position: relative;
 }
 
-.our-services h3::before {
+.our-services .our-services-title::before {
     content: '';
     width: 78px;
     height: 2px;
     position: absolute;
     background: #18CFAB;
-    bottom: -26px;
+    bottom: -28px;
     left: 68px;
 }
 
-.our-services h3::after {
+.our-services .our-services-title::after {
     content: '';
     width: 78px;
     height: 2px;
@@ -319,7 +319,7 @@
     display: flex;
 }
 
-.article-content-wrapper p {
+.article-content-wrapper .article-content-text {
     margin-left: 13px;
 }
 
@@ -340,15 +340,16 @@
     align-items: center;
 }
 
-.purchase-wrapper .purchase-content h2 {
+.purchase-wrapper .purchase-content .purchase-title {
     margin: 126px 0 12px;
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
+    text-transform: uppercase;
     color: #18CFAB;
 }
 
-.purchase-wrapper .purchase-content p {
+.purchase-wrapper .purchase-content .purchase-text {
     margin-bottom: 62px;
     font-weight: 400;
     font-size: 16px;
@@ -397,6 +398,9 @@
 .our-amazing-works-wrapper {
     min-height: 1212px;
     background-color: #E9EDEF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .our-amazing-works-wrapper .works-title {
@@ -407,7 +411,6 @@
     line-height: 40px;
     color: #4E4E4E;
     position: relative;
-    width: fit-content;
 }
 
 .our-amazing-works-wrapper .works-title::before {
@@ -416,7 +419,7 @@
     height: 2px;
     position: absolute;
     background: #18CFAB;
-    bottom: -26px;
+    bottom: -28px;
     left: 130px;
 }
 
@@ -538,6 +541,258 @@
 }
 
 
-/*----------------------------OUR AMAZING WORKS------------------------------*/
+/*----------------------------BREAKING NEWS------------------------------*/
+
+.breaking-news-wrapper {
+    min-height: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.breaking-news-wrapper .news-title {
+    padding-top: 93px;
+    margin: 0 auto 93px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #4E4E4E;
+    position: relative;
+}
+
+.breaking-news-wrapper .news-title::before {
+    content: '';
+    width: 78px;
+    height: 2px;
+    position: absolute;
+    background: #18CFAB;
+    bottom: -28px;
+    left: 102px;
+}
+
+.breaking-news-wrapper .news-title::after {
+    content: '';
+    width: 78px;
+    height: 2px;
+    position: absolute;
+    background: #18CFAB;
+    bottom: -34px;
+    left: 110px;
+}
+
+.breaking-news-wrapper .news-tabs-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 263px);
+    column-gap: 25px;
+    row-gap: 44px;
+}
+
+.breaking-news-wrapper .news-tabs-wrapper .news-tab {
+    position: relative;
+    text-align: center;
+}
+
+.breaking-news-wrapper .news-tabs-wrapper .news-tab h4 {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #717171;
+
+    transition: color 0.2s ease;
+}
+
+.breaking-news-wrapper .news-tabs-wrapper .news-tab .span-wrapper {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 39px;
+    color: #777777;
+}
+
+.breaking-news-wrapper .news-tabs-wrapper .news-tab .span-wrapper span {
+    margin: 0 12px;
+    position: relative;
+}
+
+.breaking-news-wrapper .news-tabs-wrapper .news-tab .span-wrapper span:first-child:after {
+    content: '|';
+    position: absolute;
+    left: 80px;
+}
+
+
+.breaking-news-wrapper .news-tabs-wrapper .news-tab .squad-wrapper {
+    width: 66px;
+    height: 64px;
+    background-color: #203E38;
+    color: #FFFFFF;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.2s ease;
+}
+
+.breaking-news-wrapper .news-tabs-wrapper .news-tab .squad-wrapper span {
+    display: inline-block;
+    line-height: 25px;
+}
+
+.breaking-news-wrapper .news-tabs-wrapper .news-tab:hover h4 {
+    color: #18CFAB;
+}
+
+.breaking-news-wrapper .news-tabs-wrapper .news-tab:hover .squad-wrapper {
+    background-color: #18CFAB;
+
+}
+
+
+/*----------------------------WHAT PEOPLE SAY------------------------------*/
+
+.people-say-wrapper {
+    min-height: 954px;
+    margin: auto;
+    background: url("../imgs/Sections background/section-3.jpg") center/cover no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.people-say-wrapper .people-say-title {
+    padding-top: 93px;
+    margin: 0 auto 93px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.people-say-wrapper .people-say-title::before {
+    content: '';
+    width: 78px;
+    height: 2px;
+    position: absolute;
+    background: #18CFAB;
+    bottom: -28px;
+    left: 246px;
+}
+
+.people-say-wrapper .people-say-title::after {
+    content: '';
+    width: 78px;
+    height: 2px;
+    position: absolute;
+    background: #18CFAB;
+    bottom: -34px;
+    left: 258px;
+}
+
+.people-say-wrapper .swiper {
+    max-width: 1160px;
+}
+
+.people-say-wrapper .swiper .swiper-wrapper .swiper-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.people-say-wrapper .swiper .swiper-wrapper .swiper-slide p {
+    margin: 135px 0 37px;
+    color: #BBBBBB;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    position: relative;
+}
+
+.people-say-wrapper .swiper .swiper-wrapper .swiper-slide p::before {
+    content: url("../imgs/icons/quatmark.svg");
+    width: 44px;
+    height: 30px;
+    scale: 1.5;
+    position: absolute;
+    top: -100px;
+    left: 558px;
+}
+
+
+.people-say-wrapper .swiper .swiper-wrapper .swiper-slide h4 {
+    color: #18CFAB;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.people-say-wrapper .swiper .swiper-wrapper .swiper-slide h5 {
+    margin: 0 0 38px;
+    color: #BBBBBB;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 27px;
+}
+
+.people-say-wrapper .swiper .swiper-wrapper .swiper-slide img {
+    box-sizing: content-box;
+    border: solid 14px rgba(31, 218, 181, 0.2);
+    border-radius: 100%;
+}
+
+.people-say-wrapper .swiper {
+    margin-bottom: 96px;
+    position: relative;
+    height: 640px;
+}
+
+.people-say-wrapper .swiper .swiper-button-next {
+    position: absolute;
+    right: 200px;
+    top: 620px;
+}
+
+.people-say-wrapper .swiper .swiper-button-prev {
+    position: absolute;
+    left: 200px;
+    top: 620px;
+}
+
+.people-say-wrapper .swiper .swiper-button-next::after {
+    content: url("../imgs/icons/arrow_1.png");
+    rotate: 180deg;
+}
+
+.people-say-wrapper .swiper .swiper-button-prev::after {
+    content: url("../imgs/icons/arrow_1.png");
+}
+
+.imgs-for-swiper {
+    display: none;
+}
+
+.swiper-pagination-bullet {
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    opacity: 1;
+    background: rgba(195, 195, 195, 0.64);
+}
+
+.swiper-pagination-bullet-active {
+    background: #007aff;
+}
+
+
+/*----------------------------WHAT PEOPLE SAY------------------------------*/
 
 
