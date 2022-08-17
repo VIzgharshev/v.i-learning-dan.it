@@ -329,7 +329,7 @@
     display: flex;
 }
 
-.our-services .list-services-articles .service-article  .article-content-wrapper .article-content-text {
+.our-services .list-services-articles .service-article .article-content-wrapper .article-content-text {
     margin-left: 13px;
 }
 
@@ -475,6 +475,11 @@
     position: relative;
 }
 
+
+.our-amazing-works-wrapper .works-gallery-articles .hidden-article {
+    display: none;
+}
+
 .our-amazing-works-wrapper .works-gallery-articles .gallery-article-hover {
     width: 284px;
     height: 206px;
@@ -532,7 +537,7 @@
 
 
 .our-amazing-works-wrapper .more-img-btn {
-    margin: auto;
+    margin: 0 auto 99px;
     width: 168px;
     height: 63px;
     background-color: #18CFAB;
@@ -550,7 +555,9 @@
     gap: 15px;
 }
 
-
+.our-amazing-works-wrapper .hidden-btn {
+    display: none;
+}
 /*----------------------------BREAKING NEWS------------------------------*/
 
 .breaking-news-wrapper {

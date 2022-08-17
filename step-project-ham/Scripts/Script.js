@@ -11,7 +11,51 @@ titlesTabsList.addEventListener('click', (event) => {
     document.querySelector(`.service-article[data-title='${titleAttribute}']`).classList.add('visible-article');
 })
 
-// --------------------SLIDER----------------------
+// --------------------OUR AMAZING WORKS----------------------
+
+const filterTabs = document.querySelector('.works-gallery-filter-titles');
+const buttonMoreImg = document.querySelector('.more-img-btn');
+const allTitles = document.querySelectorAll('.gallery-article');
+
+for (const title of allTitles) {
+    console.log(title.getAttribute('data-title'))
+}
+
+filterTabs.addEventListener('click', event => {
+    let targetAttr = event.target.dataset.title;
+    const allArticles = document.querySelectorAll('.gallery-article');
+    const allTitles = document.querySelectorAll('.gallery-article');
+
+    if (targetAttr === 'All') {
+        for (const title of allTitles) {
+            title.classList.remove('hidden-article');
+        }
+        for (let i = 12; i < allArticles.length; i++) {
+            allArticles[i].classList.add('hidden-article');
+        }
+        buttonMoreImg.classList.remove('hidden-btn');
+    } else {
+
+        for (const article of allArticles) {
+            article.classList.add('hidden-article');
+        }
+        for (const article of allArticles) {
+            if (article.getAttribute('data-title') === targetAttr) {
+                article.classList.remove('hidden-article')
+            } 
+        }
+
+    }
+})
+
+
+buttonMoreImg.addEventListener('click', event => {
+    const allArticles = document.querySelectorAll('.gallery-article');
+    for (const article of allArticles) {
+        article.classList.remove('hidden-article');
+    }
+    buttonMoreImg.classList.add('hidden-btn');
+})
 
 
 // --------------------SLIDER----------------------
