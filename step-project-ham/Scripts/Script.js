@@ -1,4 +1,4 @@
-// ---------------OUR SERVICES TABS----------------
+// --------------------OUR SERVICES TABS----------------------------------------------------
 
 const titlesTabsList = document.querySelector('.list-services-titles');
 
@@ -11,7 +11,7 @@ titlesTabsList.addEventListener('click', (event) => {
     document.querySelector(`.service-article[data-title='${titleAttribute}']`).classList.add('visible-article');
 })
 
-// --------------------OUR AMAZING WORKS----------------------
+// --------------------OUR AMAZING WORKS----------------------------------------------------
 
 const filterTabs = document.querySelector('.works-gallery-filter-titles');
 const buttonMoreImg = document.querySelector('.more-img-btn');
@@ -48,7 +48,6 @@ filterTabs.addEventListener('click', event => {
     }
 })
 
-
 buttonMoreImg.addEventListener('click', event => {
     const allArticles = document.querySelectorAll('.gallery-article');
     for (const article of allArticles) {
@@ -57,8 +56,7 @@ buttonMoreImg.addEventListener('click', event => {
     buttonMoreImg.classList.add('hidden-btn');
 })
 
-
-// --------------------SLIDER----------------------
+// --------------------SLIDER-------------------------------------------------------
 
 let swiper = new Swiper(".mySwiper2", {
     slidesPerView: 4,
