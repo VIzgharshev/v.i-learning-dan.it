@@ -27,15 +27,18 @@ filterTabs.addEventListener('click', event => {
     const allTitles = document.querySelectorAll('.gallery-article');
 
     if (targetAttr === 'All') {
+        document.querySelector('.filter-active').classList.remove('filter-active');
+        event.target.classList.add('filter-active')
+        buttonMoreImg.classList.remove('hidden-btn');
         for (const title of allTitles) {
             title.classList.remove('hidden-article');
         }
         for (let i = 12; i < allArticles.length; i++) {
             allArticles[i].classList.add('hidden-article');
         }
-        buttonMoreImg.classList.remove('hidden-btn');
     } else {
-
+        document.querySelector('.filter-active').classList.remove('filter-active');
+        event.target.classList.add('filter-active')
         for (const article of allArticles) {
             article.classList.add('hidden-article');
         }
