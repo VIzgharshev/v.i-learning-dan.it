@@ -233,8 +233,10 @@
 }
 
 /*----------------------------OUR SERVICES------------------------------*/
+
 .our-services {
     max-width: 1160px;
+    min-height: 558px;
     margin: 0 auto 91px;
     display: flex;
     flex-direction: column;
@@ -284,6 +286,7 @@
     border: 1px solid #F2F2F2;
     text-align: center;
     padding-top: 27px;
+    cursor: pointer;
 }
 
 .list-services-titles .service-title:hover {
@@ -307,19 +310,26 @@
     bottom: -8px;
 }
 
-.service-article {
-    display: none;
+.our-services .list-services-articles {
+    position: relative;
 }
 
-.visible {
+.our-services .list-services-articles .service-article {
+    display: none;
+    min-width: 1160px;
+    position: absolute;
+    left: -580px;
+}
+
+.our-services .list-services-articles .visible-article {
     display: initial;
 }
 
-.article-content-wrapper {
+.our-services .list-services-articles .service-article .article-content-wrapper {
     display: flex;
 }
 
-.article-content-wrapper .article-content-text {
+.our-services .list-services-articles .service-article  .article-content-wrapper .article-content-text {
     margin-left: 13px;
 }
 
@@ -663,6 +673,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .people-say-wrapper .people-say-title {
@@ -741,7 +752,7 @@
     line-height: 27px;
 }
 
-.people-say-wrapper .swiper .swiper-wrapper .swiper-slide img {
+.people-say-wrapper .mySwiper .swiper-wrapper .swiper-slide img {
     box-sizing: content-box;
     border: solid 14px rgba(31, 218, 181, 0.2);
     border-radius: 100%;
@@ -755,13 +766,13 @@
 
 .people-say-wrapper .swiper .swiper-button-next {
     position: absolute;
-    right: 200px;
+    right: 350px;
     top: 620px;
 }
 
 .people-say-wrapper .swiper .swiper-button-prev {
     position: absolute;
-    left: 200px;
+    left: 350px;
     top: 620px;
 }
 
@@ -774,22 +785,27 @@
     content: url("../imgs/icons/arrow_1.png");
 }
 
-.imgs-for-swiper {
-    display: none;
+.people-say-wrapper .mySwiper2 {
+    position: absolute;
+    bottom: -570px;
 }
 
-.swiper-pagination-bullet {
-    width: 58px;
-    height: 58px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 12px;
-    opacity: 1;
-    background: rgba(195, 195, 195, 0.64);
+.people-say-wrapper .mySwiper2 .swiper-wrapper {
+    padding-top: 20px;
 }
 
-.swiper-pagination-bullet-active {
-    background: #007aff;
+.people-say-wrapper .mySwiper2 .swiper-wrapper .swiper-slide img {
+    border: solid 3px rgba(31, 218, 181, 0.2);
+    border-radius: 100%;
+    margin: 0 10px;
+}
+
+.people-say-wrapper .mySwiper2 .swiper-wrapper .swiper-slide-visible {
+}
+
+.people-say-wrapper .mySwiper2 .swiper-wrapper .swiper-slide-thumb-active {
+    position: relative;
+    bottom: 15px;
 }
 
 
