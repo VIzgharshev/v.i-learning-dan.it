@@ -297,6 +297,8 @@
     color: #FFFFFF;
     background-color: #18CFAB;
     position: relative;
+    border: solid 1px #18CFAB;
+
 }
 
 .list-services-titles .active-service::after {
@@ -411,6 +413,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .our-amazing-works-wrapper .works-title {
@@ -558,6 +561,74 @@
 .our-amazing-works-wrapper .hidden-btn {
     display: none;
 }
+
+/*----loading animation----*/
+
+.our-amazing-works-wrapper .box {
+    width: 110px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 127px;
+}
+
+.our-amazing-works-wrapper .box .container {
+    height: 15px;
+    width: 105px;
+    display: flex;
+    position: relative;
+}
+
+.our-amazing-works-wrapper .box .container .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: move 500ms linear 0ms infinite;
+    margin-right: 30px;
+}
+
+.our-amazing-works-wrapper .box .container .circle:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: grow 500ms linear 0ms infinite;
+}
+
+.our-amazing-works-wrapper .box .container .circle:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+    animation: grow 500ms linear 0s infinite reverse;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0px)
+    }
+    to {
+        transform: translateX(45px)
+    }
+}
+
+.our-amazing-works-wrapper .hidden-loading {
+    display: none;
+}
+
 /*----------------------------BREAKING NEWS------------------------------*/
 
 .breaking-news-wrapper {
@@ -717,11 +788,16 @@
     max-width: 1160px;
 }
 
+.people-say-wrapper .swiper .swiper-wrapper {
+    max-height: 58px;
+}
+
 .people-say-wrapper .swiper .swiper-wrapper .swiper-slide {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 58px;
 }
 
 .people-say-wrapper .swiper .swiper-wrapper .swiper-slide p {
@@ -766,9 +842,8 @@
 }
 
 .people-say-wrapper .swiper {
-    margin-bottom: 96px;
     position: relative;
-    height: 640px;
+    height: 728px;
 }
 
 .people-say-wrapper .swiper .swiper-button-next {
@@ -794,20 +869,22 @@
 
 .people-say-wrapper .mySwiper2 {
     position: absolute;
-    bottom: -570px;
+    max-height: 100px;
+    bottom: 54px;
 }
 
 .people-say-wrapper .mySwiper2 .swiper-wrapper {
     padding-top: 20px;
 }
 
+.people-say-wrapper .mySwiper2 .swiper-wrapper .swiper-slide {
+    cursor: pointer;
+}
+
 .people-say-wrapper .mySwiper2 .swiper-wrapper .swiper-slide img {
     border: solid 3px rgba(31, 218, 181, 0.2);
     border-radius: 100%;
     margin: 0 10px;
-}
-
-.people-say-wrapper .mySwiper2 .swiper-wrapper .swiper-slide-visible {
 }
 
 .people-say-wrapper .mySwiper2 .swiper-wrapper .swiper-slide-thumb-active {
@@ -818,4 +895,22 @@
 
 /*----------------------------WHAT PEOPLE SAY------------------------------*/
 
+.footer {
+    min-height: 121px;
+    background-color: #22353F;
 
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    color: #AEAEAE;
+}
+
+.footer p {
+    text-align: center;
+    padding: 48px;
+}
+
+.footer p span {
+    color: #18CFAB;
+}

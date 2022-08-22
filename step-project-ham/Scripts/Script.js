@@ -51,13 +51,27 @@ filterTabs.addEventListener('click', event => {
     }
 })
 
-buttonMoreImg.addEventListener('click', event => {
+function showImgs() {
+    document.querySelector('.box').classList.add('hidden-loading');
     const allArticles = document.querySelectorAll('.gallery-article');
     for (const article of allArticles) {
         article.classList.remove('hidden-article');
     }
+}
+
+buttonMoreImg.addEventListener('click', event => {
     buttonMoreImg.classList.add('hidden-btn');
+    document.querySelector('.hidden-loading').classList.remove('hidden-loading');
+    setTimeout(showImgs, 2000)
 })
+
+// buttonMoreImg.addEventListener('click', event => {
+//     const allArticles = document.querySelectorAll('.gallery-article');
+//     for (const article of allArticles) {
+//         article.classList.remove('hidden-article');
+//     }
+//     buttonMoreImg.classList.add('hidden-btn');
+// })
 
 // --------------------SLIDER-------------------------------------------------------
 
