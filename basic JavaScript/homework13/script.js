@@ -2,7 +2,7 @@ const btnStop = document.querySelector('.stop');
 const btnStart = document.querySelector('.start');
 const imageCollection = document.querySelectorAll('.image-to-show');
 let counterImg = 1;
-let startStop = ''
+let startStop = '';
 
 function showImg() {
     for (const img of imageCollection) {
