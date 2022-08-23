@@ -90,3 +90,40 @@ let swiper2 = new Swiper(".mySwiper", {
         swiper: swiper,
     },
 });
+
+// --------------------MASONRY-------------------------------------------------------
+
+const buttonMoreImg2 = document.querySelector('.more-img-btn2')
+const elem = document.querySelector('.grid');
+
+function showImgs2() {
+    document.querySelector('.box2').classList.add('hidden-loading');
+    const allMasonryImgs = document.querySelectorAll('.grid-item');
+    for (const masonryImg of allMasonryImgs) {
+        masonryImg.classList.remove('masonry-hidden');
+    }
+    document.querySelector('.box2').classList.add('hidden-loading2');
+    const iso = new Isotope( elem, {
+        // options
+        itemSelector: '.grid-item',
+        layoutMode: 'masonry',
+        masonry: {
+            columnWidth: '.grid-sizer',
+        }
+    });
+}
+
+buttonMoreImg2.addEventListener('click', event => {
+    buttonMoreImg2.classList.add('hidden-btn');
+    document.querySelector('.hidden-loading2').classList.remove('hidden-loading2');
+    setTimeout(showImgs2, 2000)
+})
+
+const iso = new Isotope( elem, {
+    // options
+    itemSelector: '.grid-item',
+    layoutMode: 'masonry',
+    masonry: {
+        columnWidth: '.grid-sizer',
+    }
+});
