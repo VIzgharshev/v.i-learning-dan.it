@@ -3,9 +3,22 @@
   "version": "1.0.0",
   "description": "Izgharshev Volodymyr FE_4_online",
   "main": "app.js",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "eslint": "^8.23.0",
+    "gulp": "^4.0.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Izgharshev Volodymyr",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VIzgharshev/v.i-learning-dan.it.git#main"
+  },
+  "author": "Izghrashev Volodymyr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VIzgharshev/v.i-learning-dan.it/issues"
+  },
+  "homepage": "https://github.com/VIzgharshev/v.i-learning-dan.it/tree/main#readme"
 }
