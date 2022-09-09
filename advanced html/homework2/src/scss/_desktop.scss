@@ -31,17 +31,24 @@
 		max-width: calc($desktop - 215px);
 		margin: 0 auto;
 	}
+   .title {
+		@include title-tablet-desktop;
+		text-transform: uppercase;
+		margin-bottom: 23px;
+      margin-left: 0;
+	}
 	.post-list {
 		grid-template-columns: 1fr 1fr;
 		column-gap: 55px;
+		margin-left: 0;
 		&__item {
 			min-width: 465px;
 		}
+
 	}
 
 	.content-wrapper {
 		max-width: calc($desktop - 215px);
-      margin: 0 auto;
 	}
 
 	.titles-wrapper {
@@ -50,11 +57,11 @@
 	}
 
 	.img-wrapper {
-		max-width: calc($desktop - 215px);
+		min-width: calc($desktop - 215px);
 		margin: 0 auto;
 		&__item {
 			display: initial;
-			width: 239px;
+			max-width: 239px;
 		}
 		&__item:last-child {
 			display: initial;

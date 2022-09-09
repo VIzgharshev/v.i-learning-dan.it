@@ -119,12 +119,14 @@
 		display: none;
 	}
 }
-
 .instagram {
 	min-width: $mobile;
 	min-height: fit-content;
 }
-
+.content-wrapper {
+	min-width: $mobile;
+   margin: 0 auto;
+}
 .titles-wrapper {
 	min-width: calc(100% - 50px);
 	margin: 0 25px;
@@ -146,12 +148,12 @@
 .img-wrapper {
 	min-width: calc(100% - 50px);
 	margin: 0 25px;
-   padding-bottom: 42px;
+	padding-bottom: 42px;
 	display: flex;
-   justify-content: space-between;
+	justify-content: space-between;
 	&__item {
 		display: none;
-		width: calc(100% - 20px);
+		max-width: 300px;
 	}
 	&__item:first-child {
 		display: initial;
@@ -175,9 +177,9 @@
 		margin: 0 auto 28px;
 		color: $text-footer-color;
 	}
-   &__add-text{
-      display: none;
-   }
+	&__add-text {
+		display: none;
+	}
 	&__icons {
 		margin-bottom: 0 0 25px;
 	}
@@ -196,6 +198,7 @@
 .title--footer {
 	color: $title-footer-color;
 	margin-bottom: 6px;
+	margin-left: 0;
 }
 
 @import "_tablets";
