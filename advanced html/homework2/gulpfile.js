@@ -56,7 +56,7 @@ exports.clear = clear;
 //----------Обробка CSS
 function buildStyles() {
 	return gulp
-		.src("./src/scss/**/*.scss")
+		.src("./src/scss/**/styles.scss")
 		.pipe(
 			plumber({
 				errorHandler: notify.onError((error) => ({

@@ -1,0 +1,64 @@
+@mixin title-mobile {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 22px;
+   color: $titles-color;
+}
+@mixin subTitle-mobile {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 11px;
+   line-height: 20px;
+   color: $subTitles-color;
+}
+@mixin paragraph-mobile {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 11px;
+   line-height: 20px;
+   color: $text-color;
+}
+@mixin navMenu-mobile {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+@mixin navMenu-desktop-tablet {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 11px;
+   line-height: 22px;
+	text-transform: uppercase;
+}
+@mixin title-tablet-desktop {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 22px;
+   color: $titles-color;
+}
+@mixin subTitle-tablet-desktop {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 20px;
+   color: $subTitles-color;
+}
+@mixin paragraph-desktop-tablet {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 26px;
+   color: $text-color;
+}

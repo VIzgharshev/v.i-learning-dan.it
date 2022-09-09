@@ -5,12 +5,152 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./dist/reset.min.css">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet">
    <link rel="stylesheet" href="./dist/styles.min.css">
+   <link rel="shortcut icon" href="./dist/img/RSS.svg" type="image/x-icon">
    <title>Document</title>
 </head>
 
 <body>
+
+   <nav class="menu">
+      <div class="btn btn--hidden">
+         <div class="btn__burger-icon"></div>
+         <div class="btn__close-icon btn__icon--hidden"></div>
+      </div>
+      <div class="mobile-menu mobile-menu--hidden">
+         <ul class="mobile-menu__links">
+            <li class="mobile-menu__link">
+               <a href="#">home</a>
+            </li>
+            <li class="mobile-menu__link">
+               <a href="#">about us</a>
+            </li>
+            <li class="mobile-menu__link">
+               <a href="#">our journal</a>
+            </li>
+            <li class="mobile-menu__link">
+               <a href="#">projects</a>
+            </li>
+            <li class="mobile-menu__link">
+               <a href="#">news</a>
+            </li>
+            <li class="mobile-menu__link">
+               <a href="#">features</a>
+            </li>
+            <li class="mobile-menu__link">
+               <a href="#">contact</a>
+            </li>
+         </ul>
+      </div>
+      <div class="tablet-desktop-menu">
+         <ul class="tablet-desktop-menu__links">
+            <li class="tablet-desktop-menu__link">
+               <a href="#">home</a>
+            </li>
+            <li class="tablet-desktop-menu__link">
+               <a href="#">about us</a>
+            </li>
+            <li class="tablet-desktop-menu__link">
+               <a href="#">our journal</a>
+            </li>
+            <li class="tablet-desktop-menu__link">
+               <a href="#">projects</a>
+            </li>
+            <li class="tablet-desktop-menu__link">
+               <a href="#">news</a>
+            </li>
+            <li class="tablet-desktop-menu__link">
+               <a href="#">features</a>
+            </li>
+            <li class="tablet-desktop-menu__link">
+               <a href="#">contact</a>
+            </li>
+         </ul>
+      </div>
+
+   </nav>
+
+   <header class="header">
+      <img class="main-img" src="/dist/img/header.png" alt="main img of the page">
+   </header>
+
+   <section class="posts">
+      <h2 class="title">- our Recent posts</h2>
+      <ul class="post-list">
+         <li class="post-list__item">
+            <img src="./dist/img/post-img 1.png" alt="post img">
+            <div class="post-list__wrapper">
+               <h3 class="post-list__title">Aenean Adipiscing Etiam Vestibulum</h3>
+               <h4 class="post-list__subtitle">Photography, Journal / 9 Comments</h4>
+               <p class="post-list__content">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare
+                  sem lacinia quam venenatis vestibulum.</p>
+            </div>
+         </li>
+         <li class="post-list__item">
+            <img src="./dist/img/post4img 1.png" alt="post img">
+            <div class="post-list__wrapper">
+               <h3 class="post-list__title">Aenean Adipiscing Etiam Vestibulum</h3>
+               <h4 class="post-list__subtitle">Photography, Journal / 9 Comments</h4>
+               <p class="post-list__content">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare
+                  sem lacinia quam venenatis vestibulum.</p>
+            </div>
+         </li>
+         <li class="post-list__item">
+            <img src="./dist/img/post1img 1.png" alt="post img">
+            <div class="post-list__wrapper">
+               <h3 class="post-list__title">Aenean Adipiscing Etiam Vestibulum</h3>
+               <h4 class="post-list__subtitle">Photography, Journal / 9 Comments</h4>
+               <p class="post-list__content">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare
+                  sem lacinia quam venenatis vestibulum.</p>
+            </div>
+         </li>
+         <li class="post-list__item">
+            <img src="./dist/img/post6img 1.png" alt="post img">
+            <div class="post-list__wrapper">
+               <h3 class="post-list__title">Aenean Adipiscing Etiam Vestibulum</h3>
+               <h4 class="post-list__subtitle">Photography, Journal / 9 Comments</h4>
+               <p class="post-list__content">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare
+                  sem lacinia quam venenatis vestibulum.</p>
+            </div>
+         </li>
+      </ul>
+   </section>
+
+   <section class="instagram">
+      <div class="content-wrapper">
+         <div class="titles-wrapper">
+            <h2 class="title title--instagram">- Latest Instagram Shots</h2>
+            <h3 class="titles-wrapper__subtitle">go to our instagram page -</h3>
+         </div>
+         <div class="img-wrapper">
+            <img class="img-wrapper__item" src="./dist/img/post-1 1.png" alt="instagram post">
+            <img class="img-wrapper__item" src="./dist/img/post-2 1.png" alt="instagram post">
+            <img class="img-wrapper__item" src="./dist/img/post-3 1.png" alt="instagram post">
+            <img class="img-wrapper__item" src="./dist/img/post-4 1.png" alt="instagram post">
+         </div>
+      </div>
+   </section>
+
+   <footer class="footer">
+      <section class="info-wrapper">
+         <h2 class="title title--footer">- get in touch with us -</h2>
+         <p class="info-wrapper__text">Maecenas faucibus molli interdum. Cras mattis consectetur purus sitor amet sed
+            donec malesuada ullamcorper odio. <span class="info-wrapper__add-text">Curabitur blandit tempus porttitor
+               vollisky inceptos mollisestor.</span> </p>
+         <div class="info-wrapper__icons">
+            <img src="./dist/img/RSS.png" alt="icon" class="info-wrapper__icon">
+            <img src="./dist/img/Facebook.png" alt="icon" class="info-wrapper__icon">
+            <img src="./dist/img/Twitter.png" alt="icon" class="info-wrapper__icon">
+            <img src="./dist/img/Dribbble.png" alt="icon" class="info-wrapper__icon">
+            <img src="./dist/img/Pinterest.png" alt="icon" class="info-wrapper__icon">
+         </div>
+         <p class="info-wrapper__contacts"> Moonshine St. 14-05 Light City &nbsp / &nbsp <br class="info-wrapper__break">T. +00
+            (123) 456 78 90 &nbsp / &nbsp <br class="info-wrapper__break">first.last@email.com</p>
+      </section>
+   </footer>
 
    <script src="./dist/scripts.min.js"></script>
 </body>

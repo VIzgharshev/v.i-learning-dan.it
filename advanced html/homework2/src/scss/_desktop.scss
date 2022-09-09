@@ -1,0 +1,74 @@
+@media (min-width: $desktop) {
+	//----------------navigation menu
+	.menu {
+		min-width: $desktop;
+		margin: 34px auto;
+	}
+	.btn--hidden {
+		display: none;
+	}
+	.tablet-desktop-menu {
+		&__link {
+			padding: 16px 30px;
+		}
+		&__links {
+			max-width: calc(100% - 215px);
+		}
+	}
+
+	//----------------header
+	.header {
+		min-width: $desktop;
+	}
+	.main-img {
+		max-width: calc($desktop - 215px);
+		margin: 0 auto 96px;
+	}
+
+	//----------------main content
+
+	.posts {
+		max-width: calc($desktop - 215px);
+		margin: 0 auto;
+	}
+	.post-list {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 55px;
+		&__item {
+			min-width: 465px;
+		}
+	}
+
+	.content-wrapper {
+		max-width: calc($desktop - 215px);
+      margin: 0 auto;
+	}
+
+	.titles-wrapper {
+		max-width: calc($desktop - 215px);
+		margin: 0 auto;
+	}
+
+	.img-wrapper {
+		max-width: calc($desktop - 215px);
+		margin: 0 auto;
+		&__item {
+			display: initial;
+			width: 239px;
+		}
+		&__item:last-child {
+			display: initial;
+		}
+	}
+
+	//----------------footer
+	.footer {
+		min-width: $desktop;
+	}
+
+	.info-wrapper {
+		&__text {
+			width: calc($desktop - 516px);
+		}
+	}
+}
