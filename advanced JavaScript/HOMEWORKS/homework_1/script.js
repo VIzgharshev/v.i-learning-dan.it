@@ -1,8 +1,8 @@
 class Employee {
   //start setter
   constructor(name, age, salary) {
-    this.name = name;
-    this.age = age;
+    this._name = name;
+    this._age = age;
     this._salary = salary;
   }
   //--------------------Name--------------------
