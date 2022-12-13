@@ -5,7 +5,7 @@ class Employee {
     this.age = age;
     this._salary = salary;
   }
-  //----------Name
+  //--------------------Name--------------------
   get name() {
     return `Hello ${this._name}!`;
   }
@@ -17,7 +17,7 @@ class Employee {
     return (this._name = name);
   }
 
-  //----------Age
+  //--------------------Age--------------------
   get age() {
     return `User age is ${this._age}`;
   }
@@ -29,7 +29,7 @@ class Employee {
     return (this._age = value);
   }
 
-  //----------Salary
+  //--------------------Salary--------------------
   get salary() {
     return `${this._name} have salary: ${this._salary} $`;
   }
@@ -49,10 +49,9 @@ class Programmer extends Employee {
     super(name, age, salary);
     this._lang = lang;
   }
-  //----------Salary
-
+  //--------------------Salary--------------------
   get salary() {
-    return (this._salary * 3);
+    return this._salary * 3;
   }
 }
 
@@ -65,4 +64,3 @@ let user4 = new Programmer('Vika', 31, 1300, ['eng', 'ukr', 'fr']);
 console.log(user2);
 console.log(user3);
 console.log(user4);
-
