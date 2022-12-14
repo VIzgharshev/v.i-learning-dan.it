@@ -58,7 +58,7 @@ class Programmer extends Employee {
     return `${this._name} knows such program languages as: ${this._lang}!!!`;
   }
   set lang(value) {
-   return this._lang += ', ' + value
+   return this._lang = value
   }
 }
 
