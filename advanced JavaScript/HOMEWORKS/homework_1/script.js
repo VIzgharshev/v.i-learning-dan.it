@@ -53,14 +53,21 @@ class Programmer extends Employee {
   get salary() {
     return this._salary * 3;
   }
+  //--------------------Langs--------------------
+  get lang() {
+    return `${this._name} knows such program languages as: ${this._lang}!!!`;
+  }
+  set lang(value) {
+   return this._lang += ', ' + value
+  }
 }
 
 let user = new Employee('Vova', 29, 1500);
 console.log(user);
 
-let user2 = new Programmer('Dima', 19, 900, ['eng', 'ukr']);
-let user3 = new Programmer('Olya', 20, 1000, ['eng', 'ukr']);
-let user4 = new Programmer('Vika', 31, 1300, ['eng', 'ukr', 'fr']);
+let user2 = new Programmer('Dima', 19, 900, 'JavaScript, PHP');
+let user3 = new Programmer('Olya', 20, 1100, 'JavaScript, Java, PHP');
+let user4 = new Programmer('Vika', 31, 1300, 'JavaScript, Java, Python, PHP');
 console.log(user2);
 console.log(user3);
 console.log(user4);
