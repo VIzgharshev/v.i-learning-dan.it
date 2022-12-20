@@ -30,29 +30,30 @@ const books = [
 
 for (let item of books) {
 	const { author, name, price } = item;
+
 	try {
 		if (!author || !name || !price) {
-			throw new Error('Not full info');
+			throw new ReferenceError('Not full info');
 		}
 	} catch (e) {
 		if (author === undefined) {
-			console.error('Author not found');
+			console.error(`${e} - Author not found`);
 		} else if (name === undefined) {
-			console.error('Name not found');
+			console.error(`${e} - Name not found`);
 		} else if (price === undefined) {
-			console.error('Price not found');
+			console.error(`${e} - Price not found`);
 		}
 	}
+
 	if (
 		Object.hasOwn(item, 'author') &&
 		Object.hasOwn(item, 'name') &&
 		Object.hasOwn(item, 'price')
 	) {
 		const ul = document.createElement('ul');
-
 		for (let key in item) {
-         const li = document.createElement('li');
-         li.innerHTML = `${key}: ${item[key]}`
+			const li = document.createElement('li');
+			li.innerHTML = `${key}: ${item[key]}`;
 			ul.append(li);
 		}
 		document.getElementById('root').append(ul);
