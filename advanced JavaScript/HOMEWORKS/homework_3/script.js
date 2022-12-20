@@ -1,6 +1,6 @@
 //-----------------Task 1
 
-const clients1 = ["Гилберт", "Сальваторе", "Пирс", "Соммерс", "Форбс", "Донован", "Беннет"];
+{const clients1 = ["Гилберт", "Сальваторе", "Пирс", "Соммерс", "Форбс", "Донован", "Беннет"];
 const clients2 = ["Пирс", "Зальцман", "Сальваторе", "Майклсон"];
 
 const newArray = [...clients1, ...clients2]
@@ -9,11 +9,11 @@ const final = [];
 for(let key of uniqe){
    final.push(key);
 }
-console.log(final);
+console.log(final);}
 
 //-----------------Task 2
 
-const characters = [
+{const characters = [
    {
      name: "Елена",
      lastName: "Гилберт",
@@ -63,22 +63,22 @@ const characters = [
    let {name, lastName, age} = item
    charactersShortInfo.push({'name': name, 'lastname': lastName, 'age': age})
  }
- console.log(charactersShortInfo);
+ console.log(charactersShortInfo);}
 
 
 //-----------------Task 3
 
-const user1 = {
+{const user1 = {
    name: "John",
    years: 30
  };
 
 let {name, years:age, isAdmin = false} = user1
-console.log(name, age, isAdmin);
+console.log(name, age, isAdmin);}
 
 //-----------------Task 4
 
-const satoshi2020 = {
+{const satoshi2020 = {
    name: 'Nick',
    surname: 'Sabo',
    age: 51,
@@ -111,10 +111,11 @@ const satoshi2020 = {
  
 //const {...fullProfile} = {...satoshi2018, ...satoshi2019, ...satoshi2020}
 const {...fullProfile} = {...satoshi2018, ...satoshi2019, ...satoshi2020}
-console.log(fullProfile);
+console.log(fullProfile);}
 
 //-----------------Task 5
-const books = [{
+
+{const books = [{
    name: 'Harry Potter',
    author: 'J.K. Rowling'
  }, {
@@ -131,6 +132,27 @@ const books = [{
  }
 
  const [...newAr] = [...books, bookToAdd] 
-console.log(newAr);
+console.log(newAr);}
 
 //-----------------Task 6
+
+{
+   const employee = {
+      name: 'Vitalii',
+      surname: 'Klichko'
+    }
+
+    const newUser = {...employee, age: 46, salary: 200000 }
+    console.log(newUser);
+}
+
+//-----------------Task 7
+
+
+{
+   const array = ['value', () => 'showValue'];
+   const [value, showValue] = array
+
+alert(value); // має бути виведено 'value'
+alert(showValue());  // має бути виведено 'showValue'
+}
