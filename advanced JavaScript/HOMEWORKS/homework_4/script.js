@@ -5,14 +5,18 @@ axios.get(linkFilmList).then(response => {
    for (const film of filmList.data) {
       console.log(film);
 		let wrapper = document.querySelector('.wrapper');
-		let ul = document.createElement('ul');
+      let ul = document.createElement('ul');
+      let h1 =document.createElement('h1')
+      let p = document.createElement('p')
+      let p2 = document.createElement('p')
       ul.classList.add('card');
       
-		ul.insertAdjacentHTML(
-			'beforeend',
-			`<h1>${film.name}</h1><p>Episode id: ${film.episodeId}</p>`
-		);
-		ul.insertAdjacentHTML('beforeend', `<p>${film.openingCrawl}</p>`);
+      h1.innerHTML = film.name;
+      p.innerHTML = `EpisodeId: ${film.episodeId}`;
+      p2.innerHTML = film.openingCrawl;
+      ul.append(h1)
+      ul.append(p)
+      ul.append(p2)
 
       wrapper.append(ul);
       
@@ -20,10 +24,10 @@ axios.get(linkFilmList).then(response => {
          let ul2 = document.createElement('ul');
 			 for (const char of item.characters) {
 				axios.get(char).then(resp => {
-					ul2.insertAdjacentHTML('beforeend', `<li>Character name: ${resp.data.name}</li>`);
+					ul2.insertAdjacentHTML('beforeend', `<li>${resp.data.name}</li>`);
 				});
          }
-         ul.append(ul2)
+         p.after(ul2)
 		}
 	}
 });
