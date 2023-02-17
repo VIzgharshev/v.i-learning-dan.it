@@ -37,6 +37,9 @@ const ModalHeader = styled.h1`
   p {
     margin-left: 10px;
   }
+  img {
+    cursor: pointer;
+  }
 `
 
 const ModalContent = styled.p`

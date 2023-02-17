@@ -55,8 +55,8 @@ export class App extends Component {
                 />}
 
                 <ButtonWrapper>
-                    <Button bgcolor='#e54b3c' text='test1' onClick={this.modalShowHandler}/>
-                    <Button bgcolor='#3c99e5' text='test2' onClick={this.modalShowHandler2}/>
+                    <Button bgcolor='#e54b3c' text='Delete' onClick={this.modalShowHandler}/>
+                    <Button bgcolor='#3c99e5' text='Add' onClick={this.modalShowHandler2}/>
                 </ButtonWrapper>
             </div>
 
