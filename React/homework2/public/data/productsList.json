@@ -3,70 +3,70 @@
     "name": "iPhone 13 Pro",
     "image": "https://stylus.ua/thumbs/378x378/73/86/2088430.png",
     "price": 1099,
-    "color": "none",
+    "color": "silver",
     "article": "12345"
   },
   {
     "name": "iPad Air",
     "image": "https://brain.com.ua/static/images/prod_img/7/5/U0706075_big.jpg",
     "price": 599,
-    "color": "none",
+    "color": "white",
     "article": "23456"
   },
   {
     "name": "MacBook Pro",
     "image": "https://content2.rozetka.com.ua/goods/images/big/269256825.jpg",
     "price": 1999,
-    "color": "none",
+    "color": "silver",
     "article": "34567"
   },
   {
     "name": "AirPods Pro",
     "image": "https://estore.ua/media/catalog/product/cache/8/image/600x600/9df78eab33525d08d6e5fb8d27136e95/a/p/apple-airpods-pro-2-mqd83_1_.jpeg",
     "price": 249,
-    "color": "none",
+    "color": "white",
     "article": "45678"
   },
   {
     "name": "Apple Watch Series 7",
     "image": "https://estore.ua/media/catalog/product/cache/8/image/600x600/9df78eab33525d08d6e5fb8d27136e95/a/p/apple-watch-series-7_5__6.jpg",
     "price": 399,
-    "color": "none",
+    "color": "black",
     "article": "56789"
   },
   {
     "name": "iMac",
     "image": "https://tehnobot.ua/media/mf_webp/jpg/media/catalog/product/cache/ae22664f1002175f526f41f661b25071/6/9/69aa2481-6228-11eb-ab71-8993a3094411.webp",
     "price": 1299,
-    "color": "none",
+    "color": "silver",
     "article": "67890"
   },
   {
     "name": "HomePod mini",
     "image": "https://estore.ua/media/catalog/product/cache/8/image/600x600/9df78eab33525d08d6e5fb8d27136e95/h/o/homepod-mini-select-spacegray-202010_fv1.jpeg",
     "price": 99,
-    "color": "none",
+    "color": "black",
     "article": "78901"
   },
   {
     "name": "Apple TV 4K",
     "image": "https://i.citrus.world/imgcache/size_800/uploads/shop/2/8/2808dbadbe73e5e58738a52ba3eb34f3.jpg",
     "price": 179,
-    "color": "none",
+    "color": "black",
     "article": "89012"
   },
   {
     "name": "Magic Keyboard",
     "image": "https://img.moyo.ua/img/products/4986/45_600.jpg?1676973066",
     "price": 99,
-    "color": "none",
+    "color": "white",
     "article": "90123"
   },
   {
     "name": "AirTag",
     "image": "https://brain.com.ua/static/images/prod_img/6/6/U0535966_big.jpg",
     "price": 29,
-    "color": "none",
+    "color": "silver",
     "article": "01234"
   }
 ]
