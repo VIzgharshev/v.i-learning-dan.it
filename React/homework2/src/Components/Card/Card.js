@@ -19,13 +19,12 @@ export class Card extends Component {
         }
     }
     render() {
-        console.log(this.props)
         return (
             <CardWrapper>
                 <Img>
                     <img src={this.props.product.image} alt={this.props.product.name}/>
                 </Img>
-                <CardHeader>
+                <CardHeader  color={this.props.product.color}>
                     <h2>{this.props.product.name}</h2>
                     <svg onClick={() => {
                         this.changeSVGColorHandler()

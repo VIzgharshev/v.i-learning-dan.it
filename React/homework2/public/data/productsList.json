@@ -3,21 +3,21 @@
     "name": "iPhone 13 Pro",
     "image": "https://stylus.ua/thumbs/378x378/73/86/2088430.png",
     "price": 1099,
-    "color": "silver",
+    "color": "lightblue",
     "article": "12345"
   },
   {
     "name": "iPad Air",
     "image": "https://brain.com.ua/static/images/prod_img/7/5/U0706075_big.jpg",
     "price": 599,
-    "color": "white",
+    "color": "silver",
     "article": "23456"
   },
   {
     "name": "MacBook Pro",
     "image": "https://content2.rozetka.com.ua/goods/images/big/269256825.jpg",
     "price": 1999,
-    "color": "silver",
+    "color": "pink",
     "article": "34567"
   },
   {

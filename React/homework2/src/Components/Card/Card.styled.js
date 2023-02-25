@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const CardWrapper = styled.div`
   width: 300px;
   height: 400px;
@@ -24,8 +23,24 @@ export const Img = styled.div`
   }
 `
 export const CardHeader = styled.div`
+
+  
   h2 {
     font-size: 26px;
+    position: relative;
+  }
+  
+  h2::before {
+    background-color: ${props => props.color};
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    position: absolute;
+    top: -250px;
+    left: 0;
+    border: 1px solid grey;
   }
 
   h2::after {
@@ -34,7 +49,6 @@ export const CardHeader = styled.div`
     content: '';
     display: block;
     height: 1px;
-    width: 100%;
     background-color: #000000;
   }
 
