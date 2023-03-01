@@ -61,7 +61,7 @@ export class Page extends Component {
         this.setState({showModal: false})
 
         let productsAdded = [];
-        if(localStorage.getItem('cart')) {
+        if (localStorage.getItem('cart')) {
             productsAdded = [...JSON.parse(localStorage.getItem('cart'))]
         }
         productsAdded.push(this.state.buyProd)
@@ -73,6 +73,7 @@ export class Page extends Component {
         this.setState({buyProd: item})
         this.setState({showModal: true})
     };
+
     componentDidMount() {
         fetch('/data/productsList.json').then(res => res.json()).then(res => this.setState({productsList: res}))
     }
@@ -92,7 +93,8 @@ export class Page extends Component {
                                                                key={item.article}
                                                                onModalShowHandler={this.modalShowHandler}
                                                                addFavorites={this.addFavorite}
-                                                               deleteFavorites={this.deleteFavorites}/>)}
+                                                               deleteFavorites={this.deleteFavorites}
+                                                               favorites={this.state.favorites}/>)}
                     {this.state.showModal && <Modal onCansel={this.modalCanselHandler}
                                                     onOk={this.modalOkHandler}/>}
                 </CardsWrapper>

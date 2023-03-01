@@ -19,6 +19,11 @@ export class Card extends Component {
         }
     }
     render() {
+        for (const card of this.props.favorites) {
+            if(card.article === this.props.product.article) {
+                this.state.svg = 'black'
+            }
+        }
         return (
             <CardWrapper>
                 <Img>
