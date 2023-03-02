@@ -4,6 +4,7 @@ export const PageWrapper = styled.div`
   width: 1120px;
   margin: auto;
   position: relative;
+  text-align: center;
 `
 export const CardsWrapper = styled.div`
   width: fit-content;

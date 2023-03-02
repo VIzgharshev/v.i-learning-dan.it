@@ -24,7 +24,7 @@ export const ModalBody = styled.div`
   box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.55);
 `
 export const ModalHeader = styled.h1`
-  width: 100%;
+  margin: 0;
   padding: 20px;
   border-radius: 10px 10px 0 0;
   font-size: 22px;

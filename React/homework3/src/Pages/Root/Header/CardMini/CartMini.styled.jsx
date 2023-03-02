@@ -3,10 +3,13 @@ import styled from "styled-components";
 export const MiniCardWrapper = styled.div`
   width: 100%;
   height: 100px;
-  padding: 0 15px;
   display: flex;
   align-items: center;
   position: relative;
+  
+  svg {
+    margin-left: 15px;
+  }
   
   svg:hover {
     cursor: pointer;
@@ -18,15 +21,17 @@ export const MiniCardWrapper = styled.div`
   }
   
   img {
-    width: 100px;
-    height: 100px;
-    scale: 0.7;
+    max-width: 150px;
+    max-height: 100%;
+    margin: auto 20px;
+    scale: 1.3;
+    top: 0;
   }
   span {
     font-size: 30px;
     font-weight: bold;
     color: #00434e;
     position: absolute;
-    right: 20px;
+    right: 25px;
   }
 `

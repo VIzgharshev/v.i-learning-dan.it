@@ -3,7 +3,7 @@ import {useMemo, useState} from "react";
 import Button from "../Button/Button.jsx";
 import {CardWrapper, Img, CardFooter, CardHeader} from "./Card.styled.jsx";
 
-export default function Card(props) {
+export default function CardForCart(props) {
     let [svg, setSvg] = useState('none')
 
     useMemo(() => {
@@ -11,8 +11,6 @@ export default function Card(props) {
             card.article === props.product.article ? setSvg('black') : null
         }
     }, props.favorites);
-
-    // props.favorites.find(prod => prod.article === props.item.article) ? setSvg('black') : null
 
     return (
         <CardWrapper>
@@ -41,7 +39,7 @@ export default function Card(props) {
             </CardHeader>
             <CardFooter>
                 <span>{props.product.price} $</span>
-                <Button text={'ADD TO CART'}
+                <Button text={'DELETE'}
                         onClick={() => props.onModalShowHandler(props.product)}/>
             </CardFooter>
         </CardWrapper>
@@ -49,7 +47,7 @@ export default function Card(props) {
 }
 
 
-Card.propTypes = {
+CardForCart.propTypes = {
     product: PropTypes.object,
     onModalShowHandler: PropTypes.func,
     addFavorites: PropTypes.func,

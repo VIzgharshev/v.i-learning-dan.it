@@ -3,11 +3,12 @@ export const CardWrapper = styled.div`
   width: 300px;
   height: 400px;
   border-radius: 10px;
-  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 6px 1px rgb(0 0 0 / 20%);
+  -webkit-box-shadow: 0 0 6px 1px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0 0 6px 1px rgb(0 0 0 / 20%);
   padding: 20px;
   position: relative;
+  text-align: left;
 `
 export const Img = styled.div`
   width: 100%;
@@ -15,6 +16,7 @@ export const Img = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
 
   img {
     scale: 0.8;
@@ -28,6 +30,7 @@ export const CardHeader = styled.div`
   h2 {
     font-size: 26px;
     position: relative;
+    margin: 10px 0;
   }
   
   h2::before {
@@ -38,7 +41,7 @@ export const CardHeader = styled.div`
     height: 15px;
     border-radius: 50px;
     position: absolute;
-    top: -250px;
+    top: -270px;
     left: 0;
     border: 1px solid grey;
   }
@@ -55,7 +58,7 @@ export const CardHeader = styled.div`
   svg {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 15px;
   }
 
   svg:hover {

@@ -8,8 +8,8 @@ export const IconsWrapper = styled.div`
   position: fixed;
   transform-origin: center;
   z-index: 10;
-  top: -10px;
-  right: calc(50% - 650px);
+  top: -13px;
+  right: calc(50% - 700px);
 `
 export const Favorite = styled.div`
   width: fit-content;

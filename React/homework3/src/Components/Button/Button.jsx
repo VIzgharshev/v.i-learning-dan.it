@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import {StyledButton} from "./Button.styled";
+import {StyledButton} from "./Button.styled.jsx";
 
 export default function Button(props) {
         return (

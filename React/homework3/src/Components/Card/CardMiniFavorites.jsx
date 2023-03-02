@@ -1,6 +1,6 @@
 import {Component} from "react";
 import PropTypes from "prop-types";
-import {MiniCardWrapper} from "./CartMini.styled";
+import {MiniCardWrapper} from "./CartMini.styled.jsx";
 
 export class CardMiniFavorites extends Component {
     render() {

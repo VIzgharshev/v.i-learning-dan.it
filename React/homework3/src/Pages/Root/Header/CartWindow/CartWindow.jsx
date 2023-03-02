@@ -1,14 +1,14 @@
 import PropTypes from "prop-types";
-import {CartWindowWrapper, CardsMini} from "./CartWindow.styled";
-import CardMiniCart from "../CardMini/CardMiniCart.js";
+import {CartWindowWrapper, CardsMini} from "./CartWindow.styled.jsx";
+import CardMiniCart from "../CardMini/CardMiniCart.jsx";
 
 export default function CartWindow(props) {
         return (
             <CartWindowWrapper>
                 <h1>CART</h1>
                 <CardsMini>
-                    {this.props.cart.length === 0 ? <h3>Haven't items!</h3>
-                        : this.props.cart.map(item => <CardMiniCart item={item}
+                    {props.cart.length === 0 ? <h3>Haven't items!</h3>
+                        : props.cart.map(item => <CardMiniCart item={item}
                                                                 key={item.article}
                                                                 onDeleteFromCart={props.onDeleteFromCart}/>)
                     }

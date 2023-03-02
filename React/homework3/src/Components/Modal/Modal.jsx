@@ -1,15 +1,13 @@
-import React, {Component} from "react";
 import PropTypes from "prop-types";
-import {Button} from "../Button/Button";
-import {ModalWrapper, ModalBody, ModalHeader, ModalContent, ModalBtnWrapper} from "./Modal.styled";
-export class Modal extends Component {
-    render() {
+import Button from "../Button/Button.jsx";
+import {ModalWrapper, ModalBody, ModalHeader, ModalContent, ModalBtnWrapper} from "./Modal.styled.jsx";
+export default function Modal(props) {
         return (
-            <ModalWrapper onClick={() => this.onCansel()}>
+            <ModalWrapper onClick={() => props.onCansel()}>
                 <ModalBody onClick={(e) => e.stopPropagation()}>
                     <ModalHeader>
                         <p>Do you want to add to cart?</p>
-                        <svg onClick={() => this.props.onCansel()}
+                        <svg onClick={() => props.onCansel()}
                              viewBox="0 0 24 24"
                              width="34" height="34"
                              fill="black"
@@ -21,13 +19,12 @@ export class Modal extends Component {
                     </ModalHeader>
                     <ModalContent>If you add this item to your cart, you can check out later! Are you sure you want to add?</ModalContent>
                     <ModalBtnWrapper>
-                        <Button text='Ok' onClick={() => this.props.onOk()}/>
-                        <Button text='Cansel' onClick={() => this.props.onCansel()}/>
+                        <Button text='Ok' onClick={() => props.onOk()}/>
+                        <Button text='Cansel' onClick={() => props.onCansel()}/>
                     </ModalBtnWrapper>
                 </ModalBody>
             </ModalWrapper>
         );
-    }
 }
 
 Modal.propTypes = {

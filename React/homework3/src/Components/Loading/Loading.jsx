@@ -1,6 +1,6 @@
-import {Container, Shadow, Circle, Wrapper} from "./Loading.styled";
+import {Container, Shadow, Circle, Wrapper} from "./Loading.styled.jsx";
 
-export const Loading = () => {
+export default function Loading() {
     return (
         <Container>
             <Wrapper>

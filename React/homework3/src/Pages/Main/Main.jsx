@@ -1,20 +1,25 @@
 import Card from "../../Components/Card/Card.jsx";
 import Modal from "../../Components/Modal/Modal.jsx";
-import {PageWrapper, CardsWrapper} from './Main.styled'
+import {PageWrapper, CardsWrapper} from './Main.styled.jsx'
+import {useContext} from "react";
+import {AppContext} from '../../App.jsx'
+
 
 export default function Main(props) {
+    const context = useContext(AppContext)
     return (
         <>
             <PageWrapper>
-                <CardsWrapper>
-                    {props.productsList.map(item => <Card product={item}
-                                                    key={item.article}
-                                                    onModalShowHandler={props.modalShowHandler}
-                                                    addFavorites={props.addFavorite}
-                                                    deleteFavorites={props.deleteFavorites}/>)}
-                    {props.showModal && <Modal onCansel={props.modalCanselHandler}
-                                         onOk={props.addToBasket}/>}
-                </CardsWrapper>
+                    <CardsWrapper>
+                        {context.productsList.map(item => <Card product={item}
+                                                                favorites={context.favorites}
+                                                                key={item.article}
+                                                                onModalShowHandler={context.modalShowHandler}
+                                                                addFavorites={context.addFavorite}
+                                                                deleteFavorites={context.deleteFavorites}/>)}
+                        {context.showModal && <Modal onCansel={context.modalCanselHandler}
+                                                     onOk={context.addToBasket}/>}
+                    </CardsWrapper>
             </PageWrapper>
         </>
     );

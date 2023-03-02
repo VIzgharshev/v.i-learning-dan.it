@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
-  width: 100%;
-  margin-top: 50px;
+  max-width: 1100px;
+  margin: 50px auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +11,7 @@ export const HeaderWrapper = styled.header`
   img {
     width: 50px;
     position: relative;
+    top: -15px;
   }
 
   img::after {
