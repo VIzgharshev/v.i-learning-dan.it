@@ -14,7 +14,7 @@ export default function Cart(props) {
                         {context.cart.map(item => <CardForCart product={item}
                                                                favorites={context.favorites}
                                                                key={item.article}
-                                                               onModalShowHandler={context.modalShowHandler}
+                                                               onModalShowHandler={context.modalDeleteShowHandler}
                                                                addFavorites={context.addFavorite}
                                                                deleteFavorites={context.deleteFavorites}/>)}
                         {context.showModal && <ModalDelete onCansel={context.modalCanselHandler}

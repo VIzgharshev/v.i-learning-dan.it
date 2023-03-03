@@ -14,6 +14,7 @@ export const AppContext = createContext({
     modalShowHandler: () => {},
     addToBasket: () => {},
     modalCanselHandler: () => {},
+    modalDeleteShowHandler: () => {},
     addFavorite: () => {},
 });
 
@@ -65,6 +66,11 @@ export default function App() {
     }
 
     function modalShowHandler(item) {
+        item = {...item, article: item.article + Math.floor(Math.random()*101) }
+        setBoughtProd(item)
+        setShowModal(true)
+    }
+    function modalDeleteShowHandler(item) {
         setBoughtProd(item)
         setShowModal(true)
     }
@@ -99,6 +105,7 @@ export default function App() {
                 modalShowHandler,
                 addToBasket,
                 modalCanselHandler,
+                modalDeleteShowHandler,
                 addFavorite,
             }
         }>

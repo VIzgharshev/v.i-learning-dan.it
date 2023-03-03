@@ -10,7 +10,7 @@ export default function Card(props) {
         for (const card of props.favorites) {
             card.article === props.product.article ? setSvg('black') : null
         }
-    }, props.favorites);
+    }, [props.favorites]);
 
     // props.favorites.find(prod => prod.article === props.item.article) ? setSvg('black') : null
 
